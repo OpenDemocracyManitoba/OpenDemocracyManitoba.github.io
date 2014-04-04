@@ -4,27 +4,13 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+This is the development blog for the coding projects created by [Open Democracy Manitoba](http://opendemocracymanitoba.ca). 
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<p>
+[Open Democracy Manitoba](http://opendemocracymanitoba.ca) (ODM) is a community organization that builds online election resources with the goal of fostering government accountability, transparency and public education. Our websites are volunteer-run and are operated in the spirit of openness, community and accountability.
+</p>
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+<p>
+We believe that Canada's voter engagement can be greatly increased. To this end we developed the above two websites for our local civic and provincial elections. During our 2010 and 2011 civic and provincial elections these sites helped over 75,000 unique voters research their candidates and learn about their local democratic process.
+</p>

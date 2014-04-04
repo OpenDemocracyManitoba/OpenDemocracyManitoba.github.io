@@ -5,15 +5,18 @@ pygments:         true
 # Permalinks
 permalink:        pretty
 
+#Timezone
+timezone:         America/Winnipeg
+
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+title:            ODM Development Blog
+tagline:          Open Democracy Manitoba 
+description:      Some description.
+url:              http://opendemocracymanitoba.github.io
 
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
+  name:           Kyle Geske
+  url:            https://twitter.com/stungeye
 
 paginate:         1
 
@@ -21,4 +24,9 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/OpenDemocracyManitoba/OpenDemocracyManitoba.github.io
+
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
