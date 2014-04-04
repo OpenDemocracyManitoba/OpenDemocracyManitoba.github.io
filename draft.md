@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Setting Up a VPS for Ruby on Rails Hosting
 ---
 
