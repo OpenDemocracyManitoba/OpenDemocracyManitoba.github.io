@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This is the development blog for the coding projects created by [Open Democracy Manitoba](http://opendemocracymanitoba.ca).
+This is the development blog for the coding projects created by [Open Democracy Manitoba](http://opendemocracymanitoba.ca) written by [Kyle Geske](http://twitter.com/stungeye) on of the co-founders of ODM.
 
 [Open Democracy Manitoba](http://opendemocracymanitoba.ca) (ODM) is a community organization that builds online election resources with the goal of fostering government accountability, transparency and public education. Our websites are volunteer-run and are operated in the spirit of openness, community and accountability.
 
