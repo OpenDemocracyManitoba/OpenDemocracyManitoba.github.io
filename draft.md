@@ -5,7 +5,13 @@ title: Setting Up a VPS for Ruby on Rails Hosting
 
 Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to create two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
 
-This post will detail the steps that were required to configure the new VPS for Ruby on Rails hosting.
+This post will detail the steps that were required to configure the new VPS for Ruby on Rails hosting. Our final hosting setup will be:
+
+* Ubuntu 12.04 LTS
+* Nginx with Phussion Passenger
+* PostgreSQL
+* Ruby 2.x
+* Rails 4.x
 
 ### Step 1 - Creating the Droplet
 
@@ -53,52 +59,77 @@ Then open `/etc/fstab` with sudo privs and add:
 
     /swapfile       none    swap    sw      0       0 
 
-I then set the swapiness to 25:
+I then set the [swappiness](https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F) to 25:
 
     echo 25 | sudo tee /proc/sys/vm/swappiness
     echo vm.swappiness = 20 | sudo tee -a /etc/sysctl.conf
 
 ### Step 4 - Installing Required Packages
 
-  sudo apt-get update
-  sudo apt-get upgrade
-  sudo apt-get install -y python-software-properties python
-  sudo add-apt-repository ppa:chris-lea/node.js
-  sudo apt-get update
-  sudo apt-get install curl git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.1 gconf2 libcurl4-openssl-dev
+Let's start by upgrading all the pre-installed packages:
 
-Setup Postgres
+    sudo apt-get update
+    sudo apt-get upgrade
 
-  sudo su postgres
-  createuser --pwprompt            (And then create a new postgres role/user)
-  createdb myapp_development       (Naming the db after your rails app name.)
+You may need to reboot after that:
 
-(I created a mbelection:mbelection user with a manitobaelection_development, manitoba_election_production db)
+    sudo reboot
 
-Install rbenv:
+Then we install all the packages we need 
 
-  curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    sudo apt-get install -y python-software-properties python
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install curl git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.1 gconf2 libcurl4-openssl-dev
+
+### Step 5 - PostgreSQL Setup
+
+Switch to the postgres user:
+
+    sudo su postgres
+
+Add a database role/user with a password:
+
+    createuser --pwprompt
+
+Add a new database where `myapp` is the name of the Rails app you will be deploying:
+
+    createdb myapp_development
+    createdb myapp_test
+    createdb myapp_production
+
+### Step 6 - Installing Ruby and Rails
+
+We are going to install Ruby by way of [rbenv](https://github.com/sstephenson/rbenv):
+
+    curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 
 Add the supplied rbenv lines to .bashrc and source it.
 
+    source ~/.bashrc
+
 Get the required dependencies:
 
-  rbenv bootstrap-ubuntu-12-04
+    rbenv bootstrap-ubuntu-12-04
 
-Install Ruby 2.1.0:
+Install Ruby (the latest version at the time of this post was 2.1.1):
 
-  rbenv install 2.1.0
-  rbenv global 2.1.0
+    rbenv install 2.1.1
+    rbenv global 2.1.1
 
-(With Vagrant I had to disable https gem source to get the following to work: gem sources --remove https://rubygems.org/ && gem source --add http://rubygems.org)
+Test your install with:
 
-Install Rails:
+    ruby -v
 
-  gem install rails
+And then we install Rails using gem:
 
-Install Passenger & NGINX:
+    gem install rails
 
-  gem install passenger 
+### Step 7 - Installing Passenger & NGINX:
+
+First we install the [Phusion Passenger](https://www.phusionpassenger.com/) gem:
+
+    gem install passenger 
   sudo passenger-install-nginx-module (Do a which passenger-install-nginx-module first and use that path.
 
 Set up the startup scripts for NGINX:
