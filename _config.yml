@@ -9,8 +9,8 @@ permalink:        pretty
 timezone:         America/Winnipeg
 
 # Setup
-title:            ODM Development Blog
-tagline:          Documenting Open Democracy Manitoba Projects
+title:            ODM Technology
+tagline:          A Blog Open Democracy Manitoba Projects
 url:              http://opendemocracymanitoba.github.io
 
 author:
