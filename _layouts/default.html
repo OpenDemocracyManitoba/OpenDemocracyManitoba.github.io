@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html>
 
   {% include head.html %}
 
@@ -11,8 +11,9 @@
           <a href="/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
+        <small><a href="/" title="Home">Home</a></small>
         {% for page in site.pages_list %}
-            <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+            <small> - <a href="{{ page[1]  }}">{{ page[0] }}</a></small>
         {% endfor %}
       </div>
 
@@ -20,7 +21,7 @@
 
       <div class="footer">
         <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+          {{ site.time | date: '%Y' }}. All content is public domain.
         </p>
       </div>
     </div>
