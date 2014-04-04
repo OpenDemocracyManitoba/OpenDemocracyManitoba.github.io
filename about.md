@@ -3,9 +3,7 @@ layout: page
 title: About
 ---
 
-<p class="message">
-This is the development blog for the coding projects created by Open Democracy Manitoba. 
-</p>
+This is the development blog for the coding projects created by [Open Democracy Manitoba](http://opendemocracymanitoba.ca).
 
 [Open Democracy Manitoba](http://opendemocracymanitoba.ca) (ODM) is a community organization that builds online election resources with the goal of fostering government accountability, transparency and public education. Our websites are volunteer-run and are operated in the spirit of openness, community and accountability.
 
