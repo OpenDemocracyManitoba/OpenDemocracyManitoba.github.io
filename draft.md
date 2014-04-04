@@ -3,6 +3,7 @@ layout: page
 title: Setting Up a VPS for Ruby on Rails Hosting
 ---
 
+Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a free new VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to migrate to two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard.
 
 
 For VM SETUP:
