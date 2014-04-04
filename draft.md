@@ -130,19 +130,50 @@ And then we install Rails using gem:
 First we install the [Phusion Passenger](https://www.phusionpassenger.com/) gem:
 
     gem install passenger 
-  sudo passenger-install-nginx-module (Do a which passenger-install-nginx-module first and use that path.
+
+And then the Nginx web server:
+
+    sudo passenger-install-nginx-module
+
+That command will likely fail, in which case you need to find the full path to executable using:
+
+    which passenger-install-nginx-module
+    sudo /full/path/to/passenger-install-nginx-module
 
 Set up the startup scripts for NGINX:
 
-  wget -O init-deb.sh http://library.linode.com/assets/660-init-deb.sh
-  sudo mv init-deb.sh /etc/init.d/nginx
-  sudo chmod +x /etc/init.d/nginx
-  sudo /usr/sbin/update-rc.d -f nginx defaults
+    wget -O init-deb.sh http://library.linode.com/assets/660-init-deb.sh
+    sudo mv init-deb.sh /etc/init.d/nginx
+    sudo chmod +x /etc/init.d/nginx
+    sudo /usr/sbin/update-rc.d -f nginx defaults
 
-Start NGNIX (and then test using web browser):
+Start Nginx:
 
-  sudo service nginx start
+    sudo service nginx start
 
+### Step 8 - Install Your Rails App 
+
+Create the /var/www folder and give it permissions.
+
+    sudo groupadd www-pub
+    sudo usermod -a -G www-pub vagrant 
+    sudo chown -R serveruser:www-pub /var/www
+    sudo chmod 2775 /var/www
+
+And then place your Rails app in the `/var/www` folder. I did so by clone the github repo:
+
+    git clone git@github.com:OpenDemocracyManitoba/winnipegelection.git
+
+Not shown in this tutorial: [Setting up your SSH keys for GitHub](https://help.github.com/articles/generating-ssh-keys#platform-linux).
+
+Configure the Rails app for use with Postgres:
+
+  * Remove sqlite from the Gemfile and replace it with the pg gem.
+  * Edit the `config/database.yml` [for use with Postgres](http://guides.rubyonrails.org/configuring.html#configuring-a-database) using the role/password you created in step 5.
+
+Don't forget to run your migration!
+
+### Step 9 - Configure Nginx to Host Your Rails App 
 
 To test, a simple /opt/nginx/conf/nginx.conf server block:
 
@@ -151,40 +182,25 @@ To test, a simple /opt/nginx/conf/nginx.conf server block:
         server_name  localhost;
         passenger_enabled on;
         rails_env development;
-        root /var/www/blog/public;
+        root /var/www/winnipegelection/public;
     }
 
-Create the /var/www folder and give it permissions.
+### Step 10 - Extra Security stuff:
 
-  sudo groupadd www-pub
-  sudo usermod -a -G www-pub vagrant 
-  sudo chown -R stungeye:www-pub /var/www
-  sudo chmod 2775 /var/www
+Enable the [ufw](https://help.ubuntu.com/community/UFW) Firewall to only permit web (port 80) and ssh (port 22) traffic:
 
+    sudo ufw default deny incoming
+    sudo ufw default allow outgoing
+    sudo ufw allow ssh
+    sudo ufw allow www
+    sudo ufw enable
 
-Extra Security stuff:
+At this point you might also want to install fail2ban, I found the following two tutorials helpful:
 
-  sudo apt-get install fail2ban
-  https://www.digitalocean.com/community/articles/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04
-  http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban
+* [How To Protect SSH with fail2ban on Ubuntu 12.04](https://www.digitalocean.com/community/articles/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04)
+* [How to Secure an nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban)
 
-  Be cautious of the DDOS fail2ban, it could ban spiders like Googlebot!
-
-Enable Firewall:
-
-  sudo ufw default deny incoming
-  sudo ufw default allow outgoing
-  sudo ufw allow ssh
-  sudo ufw allow www
-  sudo ufw enable
-
-Test out Rails:
-
-in /var/www: rails new blog
-
-Edit Gemfile, remove sqlite3 add pg.
-
-Edit config/database.yml
+Be cautious of the DDOS fail2ban mentioned in the second tutorial, it could ban legit spiders like Googlebot!
 
 
 
