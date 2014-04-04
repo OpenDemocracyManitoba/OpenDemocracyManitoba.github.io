@@ -10,8 +10,7 @@ timezone:         America/Winnipeg
 
 # Setup
 title:            ODM Development Blog
-tagline:          Open Democracy Manitoba 
-description:      Some description.
+tagline:          Documenting Open Democracy Manitoba Projects
 url:              http://opendemocracymanitoba.github.io
 
 author:
