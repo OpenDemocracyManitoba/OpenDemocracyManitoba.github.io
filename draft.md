@@ -15,7 +15,7 @@ This post will detail the steps that were required to configure the new VPS for 
 
 This post does not rely on any configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/) or [Chef](http://www.getchef.com/).
 
-**WARNING**: *This tutorial assumes a familarity with the Linux command line and server administration in general. This is not a beginner tutorial. It was mainly written so that I would remember the setup process.*
+**WARNING**: *This tutorial assumes a familiarity with the Linux command line and server administration in general. This is not a beginner tutorial. It was mainly written so that I would remember the setup process.*
 
 ### Step 1 - Creating the Droplet
 
@@ -30,7 +30,7 @@ Digital Ocean (DO) calls their VPS instances Droplets. Once you have a DO accoun
 
 ### Step 2 - User Setup 
 
-Once the droplet was created, I was emailed a root username and password. I was then able to login to the server as root using [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/). My first order of business was to create a new user with sudoer previledges, and then lock root out of SSH access:
+Once the droplet was created, I was emailed a root username and password. I was then able to login to the server as root using [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/). My first order of business was to create a new user with sudoer privileges, and then lock root out of SSH access:
 
     adduser serveruser
     visudo
