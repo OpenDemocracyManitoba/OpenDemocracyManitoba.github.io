@@ -3,7 +3,39 @@ layout: page
 title: Setting Up a VPS for Ruby on Rails Hosting
 ---
 
-Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a free new VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to migrate to two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard.
+Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to migrate to two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
+
+This post will detail the steps that were required to configure the new VPS for Ruby on Rails hosting.
+
+### Step 1 - Creating the Droplet
+
+Digital Ocean (DO) calls their VPS instances Droplets. Once you have DO account you can create new droplets by clicking on the 'Create' button in your admin dashboard. We selected the following options:
+
+* Size: 1GB\*
+* Region: The default (New York 2)
+* Linux Distribution: Ubuntu 12.04 LTS
+* Settings: Enable VirtIO
+
+\* We started with a 1GB droplet to speed up the config process and later scaled back down to 512MB.
+
+### Step 2 - User Setup 
+
+Once the droplet was created I was emailed a root username and password. I was then able to login to the server as root using [Putt](http://www.chiark.greenend.org.uk/~sgtatham/putty/). I was then able to add a new user to the sytem:
+
+    adduser serveruser
+    visudo
+
+The second command opens up the sudoers file to which I added:
+
+    serveruser    ALL=(ALL:ALL) ALL
+
+I then edited the `/etc/ssh/sshd_config` file to add:
+
+    PermitRootLogin no
+
+And then I restarted ssh and logged back in with my new user:
+
+    service ssh restart
 
 
 For VM SETUP:
