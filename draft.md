@@ -3,24 +3,24 @@ layout: page
 title: Setting Up a VPS for Ruby on Rails Hosting
 ---
 
-Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to migrate to two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
+Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move the site from it's existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20). A VPS, by the way, is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server), in our case a virtualized Linux server. On our existing VPS we were hosting close to 30 websites. Some of these sites were PHP, some Rails, and a few were even Perl. The idea was to create two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was primary based on price and well as the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
 
 This post will detail the steps that were required to configure the new VPS for Ruby on Rails hosting.
 
 ### Step 1 - Creating the Droplet
 
-Digital Ocean (DO) calls their VPS instances Droplets. Once you have DO account you can create new droplets by clicking on the 'Create' button in your admin dashboard. We selected the following options:
+Digital Ocean (DO) calls their VPS instances Droplets. Once you have a DO account you can create new droplets by clicking on the 'Create' button in your admin dashboard. I selected the following options:
 
 * Size: 1GB\*
 * Region: The default (New York 2)
 * Linux Distribution: Ubuntu 12.04 LTS
 * Settings: Enable VirtIO
 
-\* We started with a 1GB droplet to speed up the config process and later scaled back down to 512MB.
+\* *I started with a 1GB droplet to speed up the config process and later scaled back down to 512MB.*
 
 ### Step 2 - User Setup 
 
-Once the droplet was created I was emailed a root username and password. I was then able to login to the server as root using [Putt](http://www.chiark.greenend.org.uk/~sgtatham/putty/). I was then able to add a new user to the sytem:
+Once the droplet was created, I was emailed a root username and password. I was then able to login to the server as root using [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/). My first order of business was to create a new user with sudoer previledges, and then lock root out of SSH access:
 
     adduser serveruser
     visudo
@@ -37,37 +37,28 @@ And then I restarted ssh and logged back in with my new user:
 
     service ssh restart
 
+From now on when I need to run a command as root I will proceed it with `sudo`.
 
-For VM SETUP:
+### Step 3 - Creating a Swap File
 
-  Command Prompt:
-  
-    vagrant init precise64 http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box
+Some of the configuration steps to follow require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04). I created a 1GB swapfile:
 
-  Edit the Vagrantfile:
+    sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024k
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    sudo chown root:root /swapfile
+    sudo chmod 0600 /swapfile
 
-    config.ssh.forward_agent = true
+Then open `/etc/fstab` with sudo privs and add:
 
+    /swapfile       none    swap    sw      0       0 
 
-  Port Forwarding in Vagrant:
+I then set the swapiness to 25:
 
-    Add to the the Vagrantfile: config.vm.network :forwarded_port, guest: 80, host: 31337
+    echo 25 | sudo tee /proc/sys/vm/swappiness
+    echo vm.swappiness = 20 | sudo tee -a /etc/sysctl.conf
 
-  Login as root over SSH, add new user and add to sudoers.
-
-    adduser stungeye
-    adduser chefquix
-    visudo
-      Add to file:
-        stungeye    ALL=(ALL:ALL) ALL
-        chefquix    ALL=(ALL:ALL) ALL
-
-If on VPS:
-
-  Add a swapfile if required: https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04
-
-
-Install required packages:
+### Step 4 - Installing Required Packages
 
   sudo apt-get update
   sudo apt-get upgrade
