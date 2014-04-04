@@ -13,6 +13,10 @@ This post will detail the steps that were required to configure the new VPS for 
 * Ruby 2.x
 * Rails 4.x
 
+This post does not rely on any configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/) or [Chef](http://www.getchef.com/).
+
+**WARNING**: This tutorial assumes a familarity the Linux command line and server administration in general. This is not a beginner tutorial. It was mainly written so that I would remember the setup process.
+
 ### Step 1 - Creating the Droplet
 
 Digital Ocean (DO) calls their VPS instances Droplets. Once you have a DO account you can create new droplets by clicking on the 'Create' button in your admin dashboard. I selected the following options:
@@ -92,6 +96,8 @@ Add a database role/user with a password:
 
     createuser --pwprompt
 
+You're going to need the role/password details again in step 8.
+
 Add a new database where `myapp` is the name of the Rails app you will be deploying:
 
     createdb myapp_development
@@ -131,7 +137,7 @@ First we install the [Phusion Passenger](https://www.phusionpassenger.com/) gem:
 
     gem install passenger 
 
-And then the Nginx web server:
+And then the [Nginx](http://nginx.org/) web server:
 
     sudo passenger-install-nginx-module
 
