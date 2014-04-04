@@ -316,6 +316,9 @@ tbody tr:nth-child(odd) th {
   color: #c0c0c0;
   letter-spacing: 0;
 }
+.masthead img {
+    margin: 1em 0 0.5em -2px;
+}
 
 
 /*
