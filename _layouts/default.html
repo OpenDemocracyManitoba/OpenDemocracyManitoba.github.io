@@ -18,6 +18,9 @@
       </div>
 
       {{ content }}
+      {% if comments %}
+        {{ include comments.html }}
+      {% endif %}
 
       <div class="footer">
         <p>
