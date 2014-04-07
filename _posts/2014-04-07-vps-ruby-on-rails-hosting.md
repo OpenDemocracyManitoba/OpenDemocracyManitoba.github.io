@@ -3,7 +3,9 @@ layout: page
 title: VPS Ruby on Rails Hosting
 ---
 
-**In this post we will configure Ruby on Rails on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
+*ODM Technology Post*
+
+**In this post we will configure Ruby on Rails deployment on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
 
 Our final hosting setup will be:
 
@@ -13,13 +15,20 @@ Our final hosting setup will be:
 * Database Server: [PostgreSQL](http://www.postgresql.org/)
 * Language and Framework: [Ruby](http://www.ruby-lang.org/) 2.x & [Rails](http://rubyonrails.org/) 4.x
 
+**WARNING**: *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
+
+### Background Information
+
 A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites. Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move our sites from their existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20).
 
 On our existing VPS we are hosting close to 30 websites, the majority of which are not ODM projects. Some of these sites run PHP, some are Rails, and a few run Perl. The idea was to create two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was based on price as well as on the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
 
-This post does not rely on a configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/) or [Chef](http://www.getchef.com/).
+### Automation and Config Management
 
-**WARNING**: *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
+This post does not rely on a configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/), [Chef](http://www.getchef.com/), or [Ansible](http://www.ansible.com).
+
+That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph. Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/articles/how-to-1-click-install-ruby-on-rails-on-ubuntu-12-10-with-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger. 
+
 
 ### Step 1 - Create the Droplet
 
@@ -227,4 +236,4 @@ Be cautious with fail2ban. You don't want to lock yourself at of your own server
 
 ### Step 12 - Test Your Sever
 
-Congrats! At this point you should be able to load your Rails app via a web browser. If you are unable to host a Rails app using this tutorial you may wish to check out [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/articles/how-to-1-click-install-ruby-on-rails-on-ubuntu-12-10-with-digitalocean). Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger.
+Congrats! At this point you should be able to load your Rails app via a web browser. When testing your app be sure to trigger actions that both read and write to your database to ensure that Postgres is properly configured.
