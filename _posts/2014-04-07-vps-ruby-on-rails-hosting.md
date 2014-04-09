@@ -58,7 +58,7 @@ I then edited the `/etc/ssh/sshd_config` file to add:
 
 And then I restarted ssh and logged back in with my `serveruser` user:
 
-    service ssh restart
+    sudo service ssh restart
 
 From now on when I need to run a command as root I will proceed the command with `sudo`. 
 
@@ -232,8 +232,49 @@ At this point you might also want to install [fail2ban](http://www.fail2ban.org/
 * [How To Protect SSH with fail2ban on Ubuntu 12.04](https://www.digitalocean.com/community/articles/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04)
 * [How to Secure an Nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban) (I only used the `badbots` and `noscript` jails.)
 
-Be cautious with fail2ban. You don't want to lock yourself at of your own server
+Be cautious with fail2ban. You don't want to lock yourself at of your own server.
 
 ### Step 12 - Test Your Sever
 
 Congrats! At this point you should be able to load your Rails app via a web browser. When testing your app be sure to trigger actions that both read and write to your database to ensure that Postgres is properly configured.
+
+### Keeping Your System Up To Date
+
+When you connect via SSH to your droplet a login message will let you know if there are pending security updates. To download and install these updates, run the following commands:
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get dist-upgrade
+
+After which you may have to restart your droplet:
+
+    sudo reboot
+
+To keep rbenv up to date:
+
+    rbenv update
+
+To list newly available Ruby versions:
+
+    rbenv install -l
+
+To install a new version:
+
+    rbenv install <version number>
+    rbenv global <version number>
+    rbenv rehash
+
+To install a new version of Rails, update your Rails project `Gemfile` and then run:
+
+    bundle update
+    rbenv rehash
+
+To install a new version of Phusion Passenger:
+
+    gem update passenger
+    which passenger-install-nginx-module # To determine the path
+    sudo /path/from/previous/command/passenger-install-nginx-module
+
+Notice that you have to re-install Nginx when upgrading passenger. At the end of the Nginx install you will be supplied with the new `passenger_root` and `passenger_ruby` settings for your `/opt/nginx/conf/nginx.conf`. After updating the Nginx conf file you can restart Nginx.
+
+    sudo service nginx restart
