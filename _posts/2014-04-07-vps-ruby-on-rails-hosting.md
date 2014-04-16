@@ -99,7 +99,7 @@ Then we install all the packages we need
     sudo apt-get install -y python-software-properties python
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
-    sudo apt-get install curl git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.1 gconf2 libcurl4-openssl-dev
+    sudo apt-get install curl git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.1 gconf2 libcurl4-openssl-dev imagemagick
 
 (Added Python for the handy `add-apt-repository` command. Added node.js for CoffeeScript support in Rails.)
 
