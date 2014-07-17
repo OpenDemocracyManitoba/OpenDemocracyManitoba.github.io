@@ -53,6 +53,6 @@ I could also use some suggestions for pulling in a more diverse audience.
 
 ### This is What Open Source Looks Like
 
-To model the open source process, ODM co-founder [Ken Harasym](https://twitter.com/kenharasym) created an Open Source Poster for the 2014 Open Government Tour. A poster kit including editable DOC and PDF versions can be [downloaded here](https://drive.google.com/file/d/0B1dJTagt8-2NOW5YZTBTbGJNTjQ/edit?usp=sharing), there is also [an editable version on Canva](https://www.canva.com/design/DAA0vHvdxz0/9wkvi7mrfkXqlMcEukX-RA/edit).
+To model [the Open Source process](https://en.wikipedia.org/wiki/Open_source), ODM co-founder [Ken Harasym](https://twitter.com/kenharasym) created an Open Source Poster for the 2014 Open Government Tour. A poster kit including editable DOC and PDF versions can be [downloaded here](https://drive.google.com/file/d/0B1dJTagt8-2NOW5YZTBTbGJNTjQ/edit?usp=sharing), there is also [an editable version on Canva](https://www.canva.com/design/DAA0vHvdxz0/9wkvi7mrfkXqlMcEukX-RA/edit).
 
 OGT14 City champions across Canada can now customize is poster for their local event, print and promote.
