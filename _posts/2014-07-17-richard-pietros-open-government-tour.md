@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Richard Pietro's Open Government Tour
 ---
 
