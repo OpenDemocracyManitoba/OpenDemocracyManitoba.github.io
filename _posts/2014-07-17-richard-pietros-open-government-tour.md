@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Richard Pietro's Open Government Tour
+title: Richard Pietro's 2014 Open Government Tour
 ---
 
 August 11th is the Winnipeg stop of Richard Pietro Open Government Tour.
