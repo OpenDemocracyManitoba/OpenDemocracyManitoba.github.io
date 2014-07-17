@@ -35,9 +35,13 @@ The event will follow a "late night talk-show" format. The evening will be broke
 
 ### What I Need From You
 
+Start following and retweeting the [#OGT14 hashtag](https://twitter.com/search?q=%23ogt14), share [the Event Brite Event](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbbt) and [the Facebook Event](https://www.facebook.com/events/1448796188709824/).
+
 The event will be dedicated to introducing Open Gov/Data to people who are new to the space. If you’re well-informed in this area, please reach out to your family/friends and bring someone less open-savvy along.
 
-Do you have anyone you can suggest as a local guest? We're looking for open-data, open-source, or open-gov practitioners. Feel free to think beyond the tech world. How about a local educator, artist or activist working in this space? I could also use some suggestions for pulling in a more diverse audience.
+Do you have anyone you can suggest as a local guest? We're looking for open-data, open-source, or open-gov practitioners. Feel free to think beyond the tech world. How about a local educator, artist or activist working in this space? We are hoping to have all guests confirmed by July 22nd, next Tuesday.
+
+I could also use some suggestions for pulling in a more diverse audience.
 
 ### This is What Open Source Looks Like
 
