@@ -7,11 +7,13 @@ August 11th is the Winnipeg stop of Richard Pietro Open Government Tour.
 
 [Register up to attend!](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent)
 
-This summer [Richard](https://twitter.com/richardpietro) is driving his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour (as described in [this article](http://o.canada.com/technology/internet/its-time-to-make-civic-engagement-sexy-again)) is to "introduce Open Gov/Data to Canadians, hopefully acting as a spark that will help push the movements over the tipping point and change the perspective that this kind of stuff isn’t only relegated to the uber-civically engaged, politico, or super-techie." More details at [opengovtour.org](http://opengovtour.org).
+This summer [Richard](https://twitter.com/richardpietro) is driving his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour (as described in [this article](http://o.canada.com/technology/internet/its-time-to-make-civic-engagement-sexy-again)) is to *"introduce Open Gov/Data to Canadians, hopefully acting as a spark that will help push the movements over the tipping point and change the perspective that this kind of stuff isn’t only relegated to the uber-civically engaged, politico, or super-techie."*
 
 > "**Open Data** refers to the default release of all the information the government collects about us. All the studies, all the reports, all the numbers all available online."
 
 > "**Open Government** is the idea that governments make this information available by default, without having to go through Freedom of Information requests or court battles. Open government means a government that works with the people, not above the people."
+
+More Open Government Tour (OGT14) details can be found at [opengovtour.org](http://opengovtour.org).
 
 ### Winnipeg Event - 6pm to 9pm on August 11th
 
