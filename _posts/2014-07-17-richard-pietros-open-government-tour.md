@@ -3,7 +3,7 @@ layout: post
 title: Richard Pietro's 2014 Open Government Tour
 ---
 
-August 11th is the Winnipeg stop of Richard Pietro Open Government Tour.
+August 11th is the Winnipeg stop of Richard Pietro's Open Government Tour.
 
 This summer [Richard](https://twitter.com/richardpietro) is driving his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour (as described in [this article](http://o.canada.com/technology/internet/its-time-to-make-civic-engagement-sexy-again)) is to *"introduce Open Gov/Data to Canadians, hopefully acting as a spark that will help push the movements over the tipping point and change the perspective that this kind of stuff isn’t only relegated to the uber-civically engaged, politico, or super-techie."*
 
@@ -23,7 +23,7 @@ We've already confirmed two guests for the evening:
 
 **Mary Agnes Welch** of the Winnipeg Free Press. Mary Agnes has written a number of data-driven stories for the Winnipeg Free Press. She also works with journalism students at Red River College on FIPPA / Data research projects.
 
-**Colin Craig** of the Canadian Tax Payers Federation. Colin's interest in open government is due to his experience with FIPPA requests and his organization's focus on accountability.
+**Colin Craig** of the Canadian Taxpayers Federation. Colin's interest in open government is due to his experience with FIPPA requests and his organization's focus on accountability.
 
 We're currently in talks with the following folks to secure more participants:
 
@@ -37,7 +37,7 @@ The event will follow a "late night talk-show" format. The evening will be broke
 * The culture of Open Government. What does it look like? What are the obstacles? Where are the low hanging fruits?
 * Open Data / Technology conversation. What are the tools and processes that can help make Open Government a reality?
 
-[The Winnipeg event](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent) is confirmed and we've booked the Carol Shield's auditorium at the Millennium Library (Downtown Graham at Donald) from 6 until 9:30pm on August 11th. [Register to Attend](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent).
+[The Winnipeg event](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent) is confirmed and we've booked the Carol Shields Auditorium at the Millennium Library (Downtown Graham at Donald) from 6 until 9:30pm on August 11th. [Register to Attend](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent).
 
 [Richard reports back](http://us8.campaign-archive1.com/home/?u=b94b0db339ea741f039bcb481&id=c8e6419b9b) that the first four events on the tour in Toronto, Kingston, Montreal and Halifax were very successful.
 
