@@ -25,11 +25,16 @@ We've already confirmed two guests for the evening:
 
 **Colin Craig** of the Canadian Taxpayers Federation. Colin's interest in open government is due to his experience with FIPPA requests and his organization's focus on accountability.
 
+A **representative from the City of Winnipeg**'s new Open Data Portal [data.winnipeg.ca](http://data.winnipeg.ca).
+
+**Charles Thirst** of the International Institute for Sustainable Development (IISD). The ISSD and the United Way built [myPeg.ca](http://mypeg.ca) a data-driven community health portal.
+
+- **Dennis Lewycky** of the Social Planning Council of Winnipeg. Government data plays a key role in the community assessment and policy work done by the Social Planning Council. 
+
 We're currently in talks with the following folks to secure more participants:
 
-* Representative from the [City of Winnipeg's new open data portal](http://data.winnipeg.ca) team.
-* Representative from [Winnipeg Transit's open API](http://api.winnipegtransit.com/home/api) team.
-* Representative from the community health portal [myPeg.ca](mypeg.ca) created by the United Way / International Institute of Sustainable Development
+* The Province of Manitoba
+* The Winnipeg Art Council
 
 The event will follow a "late night talk-show" format. The evening will be broken down into two groups of guests, with a theme topic for each group. The Toronto event was organized into three sections:
 
