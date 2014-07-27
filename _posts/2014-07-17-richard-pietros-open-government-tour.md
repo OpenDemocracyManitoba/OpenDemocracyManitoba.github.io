@@ -29,7 +29,7 @@ A **representative from the City of Winnipeg**'s new Open Data Portal [data.winn
 
 **Charles Thirst** of the International Institute for Sustainable Development (IISD). The ISSD and the United Way built [myPeg.ca](http://mypeg.ca) a data-driven community health portal.
 
-**Dennis Lewycky** of the Social Planning Council of Winnipeg. Government data plays a key role in the community assessment and policy work done by the Social Planning Council. 
+**Dennis Lewycky** of the Social Planning Council of Winnipeg is an advocate of more accessible government data for research on social equity issues. The SPCW led a coalition of organizations in buying more detailed neighbourhood-level cross-tabulation Census data from Statistics Canada.
 
 We're currently in talks with the following folks to secure more participants:
 
