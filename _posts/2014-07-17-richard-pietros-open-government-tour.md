@@ -27,7 +27,7 @@ We've already confirmed two guests for the evening:
 
 A **representative from the City of Winnipeg**'s new Open Data Portal [data.winnipeg.ca](http://data.winnipeg.ca).
 
-**Charles Thirst** of the International Institute for Sustainable Development (IISD). The ISSD and the United Way built [myPeg.ca](http://mypeg.ca) a data-driven community health portal.
+**Charles Thrift** of the International Institute for Sustainable Development (IISD). The IISD and the United Way built Peg ([mypeg.ca](http://mypeg.ca)) a data-driven community well-being portal.
 
 **Dennis Lewycky** of the Social Planning Council of Winnipeg is an advocate of more accessible government data for research on social equity issues. The SPCW led a coalition of organizations in buying more detailed neighbourhood-level cross-tabulation Census data from Statistics Canada.
 
