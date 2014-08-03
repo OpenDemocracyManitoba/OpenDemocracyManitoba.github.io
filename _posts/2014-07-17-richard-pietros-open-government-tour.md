@@ -19,7 +19,7 @@ More Open Government Tour (OGT14) details can be found at [opengovtour.org](http
 
 Open Democracy Manitoba is hosting the event along with sponsors the [Community News Commons](ihttp://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/).
 
-We've already confirmed two guests for the evening:
+We have confirmed the following guests for the evening:
 
 **Mary Agnes Welch** of the Winnipeg Free Press. Mary Agnes has written a number of data-driven stories for the Winnipeg Free Press. She also works with journalism students at Red River College on FIPPA / Data research projects.
 
