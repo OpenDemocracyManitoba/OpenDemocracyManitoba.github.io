@@ -3,24 +3,16 @@ layout: page
 title: Richard Pietro's Open Government Tour Retrospective
 ---
 
-Open Democracy and Open Government movements are spreading across Canada.
-
 It began with this tweet.
 
 <blockquote class="twitter-tweet" lang="en"><p>Hello <a href="https://twitter.com/stungeye">@stungeye</a>! I read that you&#39;re part of Open Democracy Manitoba and thought you might be interested about a project I&#39;m working on :-)</p>&mdash; Richard Pietro (@richardpietro) <a href="https://twitter.com/richardpietro/status/456969530200580096">April 18, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This is how I met Richard Pietro and learned of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so in N cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, x, y, zs.
+This is how I met Richard Pietro and learned of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so this past summer in cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, entrepreneurs, and citizens.
 
 On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
 
-"Open Data refers to the default release of all the information the government collects about us. All the studies, all the reports, all the numbers all available online."
-
-"Open Government is the idea that governments make this information available by default, without having to go through Freedom of Information requests or court battles. Open government means a government that works with the people, not above the people."
-
-Richard and Kyle moderated. The Winnipeg guests were split across two halves of the evening. The guests were Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD), and Dennis Lewycky of the Social Planning Council of Winnipeg.
-
-To model the Open Source process, ODM co-founder Ken Harasym created an Open Source Poster for the 2014 Open Government Tour.
+The event was co-moderated by Richard and myself (Kyle Geske of Open Democracy Manitoba). The Winnipeg guests were Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD), and Dennis Lewycky of the Social Planning Council of Winnipeg.
 
 We were happy with the turnout, which included a number of city journalists and election candidates including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
 
