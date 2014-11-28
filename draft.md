@@ -23,7 +23,7 @@ The evening started with Richard defining Open Government and Open Data and why 
 
 ## First panel: Access and why it's important
 
-The first panel of guests comprised of Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, and Dennis Lewycky of the Social Planning Council of Winnipeg. We were also joined by Keith McDonald from the City of Toronto's Open Data team via Twitter.
+The first panel of guests included Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, and Dennis Lewycky of the Social Planning Council of Winnipeg. We were also joined by Keith McDonald from the City of Toronto's Open Data team via Twitter.
 
 Paper is to #OpenData as KFC is to Canada Food Guide
 
@@ -39,7 +39,7 @@ Educating the public about open data.
 
 ## Second Half Meeting the Makers
 
-Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD). And via Skype [Jose Javier](http://twitter.com/jiguiniz), Senior Policy Analyst at Ontario Ministry of Government Services, and [Andrew Fogg](http://twitter.com/andrewfogg) of [import.io](import.io).
+The second panel of guests included Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD). [Jose Javier](http://twitter.com/jiguiniz), Senior Policy Analyst at Ontario Ministry of Government Services, and [Andrew Fogg](http://twitter.com/andrewfogg) of [import.io](import.io) joined us by way of Skype.
 
 Open Government Licence establishes rules for gov't and citizens. Encourages people to use #opendata.
 
