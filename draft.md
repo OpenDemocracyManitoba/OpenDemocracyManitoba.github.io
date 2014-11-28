@@ -1,46 +1,64 @@
 ---
 layout: page
-title: Richard Pietro's Open Government Tour
+title: Richard Pietro's Open Government Tour Retrospective
 ---
 
-August 11th is the Winnipeg stop of Richard Pietro Open Government Tour.
+Open Democracy and Open Government movements are spreading across Canada.
 
-[Register up to attend!](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent)
+It began with this tweet.
 
-This summer [Richard](https://twitter.com/richardpietro) is driving his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour (as described in [this article](http://o.canada.com/technology/internet/its-time-to-make-civic-engagement-sexy-again)) is to "introduce Open Gov/Data to Canadians, hopefully acting as a spark that will help push the movements over the tipping point and change the perspective that this kind of stuff isn’t only relegated to the uber-civically engaged, politico, or super-techie." More details at [opengovtour.org](http://opengovtour.org).
+<blockquote class="twitter-tweet" lang="en"><p>Hello <a href="https://twitter.com/stungeye">@stungeye</a>! I read that you&#39;re part of Open Democracy Manitoba and thought you might be interested about a project I&#39;m working on :-)</p>&mdash; Richard Pietro (@richardpietro) <a href="https://twitter.com/richardpietro/status/456969530200580096">April 18, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Open Democracy Manitoba is hosting the event along with sponsors the [Community News Commons](ihttp://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/).
+This is how I met Richard Pietro and learned of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so in N cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, x, y, zs.
 
-We've already confirmed two guests for the evening:
+On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
 
-**Mary Agnes Welch** of the Winnipeg Free Press. Mary Agnes has written a number of data-driven stories for the Winnipeg Free Press. She also works with journalism students at Red River College on FIPPA / Data research projects.
+"Open Data refers to the default release of all the information the government collects about us. All the studies, all the reports, all the numbers all available online."
 
-**Colin Craig** of the Canadian Tax Payers Federation. Colin's interest in open government is due to his experience with FIPPA requests and his organization's focus on accountability.
+"Open Government is the idea that governments make this information available by default, without having to go through Freedom of Information requests or court battles. Open government means a government that works with the people, not above the people."
 
-We're currently in talks with the following folks to secure more participants:
+Richard and Kyle moderated. The Winnipeg guests were split across two halves of the evening. The guests were Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD), and Dennis Lewycky of the Social Planning Council of Winnipeg.
 
-* Representative from the [City of Winnipeg's new open data portal](http://data.winnipeg.ca) team.
-* Representative from [Winnipeg Transit's open API](http://api.winnipegtransit.com/home/api) team.
-* Representative from the community health portal [myPeg.ca](mypeg.ca) created by the United Way / International Institute of Sustainable Development
+To model the Open Source process, ODM co-founder Ken Harasym created an Open Source Poster for the 2014 Open Government Tour.
 
-The event will follow a "late night talk-show" format. The evening will be broken down into two groups of guests, with a theme topic for each group. The Toronto event was organized into three sections:
+We were happy with the turnout, which included a number of city journalists and election candidates including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
 
-* Intro; relationship with Make Web Not War; What is Open Source?
-* The culture of Open Government. What does it look like? What are the obstacles? Where are the low hanging fruits?
-* Open Data / Technology conversation. What are the tools and processes that can help make Open Government a reality?
+"Fundamentally, open data is about restoring trust with our government": @richardpietro
 
-[The Winnipeg event](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent) is confirmed and we've booked the Carol Shield's auditorium at the Millennium Library (Downtown Graham at Donald) from 6 until 9:30pm on August 11th. [Register to Attend](https://www.eventbrite.ca/e/the-open-government-tour-winnipeg-tickets-12153636855?aff=efbevent).
+Tired of the "vending machine government" @richardpietro describes: taxes in, services out? #opengov can help!
 
-[Richard reports back](http://us8.campaign-archive1.com/home/?u=b94b0db339ea741f039bcb481&id=c8e6419b9b) that the first four events on the tour in Toronto, Kingston, Montreal and Halifax were very successful.
+<iframe width="420" height="315" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
-### What I Need From You
+First panel: Access and why it's important
+@mawwelch, @colincraig1, Dennis Lewycky from SPCW, @COTkeith from  City of Toronto's Open Data team
 
-The event will be dedicated to introducing Open Gov/Data to people who are new to the space. If you’re well-informed in this area, please reach out to your family/friends and bring someone less open-savvy along.
+Paper is to #OpenData as KFC is to Canada Food Guide
 
-Do you have anyone you can suggest as a local guest? We're looking for open-data, open-source, or open-gov practitioners. Feel free to think beyond the tech world. How about a local educator, artist or activist working in this space? I could also use some suggestions for pulling in a more diverse audience.
+uses FIPPA to push for policy changes — i.e. where to find savings — and to investigate citizens' tips.
 
-### This is What Open Source Looks Like
+Like journalism, technology is not objective, Lewycky says. Can be used in biased way. Or: different metrics can create bias.
 
-To model the open source process, ODM co-founder [Ken Harasym](https://twitter.com/kenharasym) created an Open Source Poster for the 2014 Open Government Tour. A poster kit including editable DOC and PDF versions can be [downloaded here](https://drive.google.com/file/d/0B1dJTagt8-2NOW5YZTBTbGJNTjQ/edit?usp=sharing), there is also [an editable version on Canva](https://www.canva.com/design/DAA0vHvdxz0/9wkvi7mrfkXqlMcEukX-RA/edit).
+Magnes notes that the data is the START of a story, not the story itself. Data gives opportunity for stories that might be missed
 
-OGT14 City champions across Canada can now customize is poster for their local event, print and promote.
+Educating the public about open data.
+
+"There's not just some kind of accountability that comes with democracy. We're the accountants!"
+
+Second Half Meeting the Makers
+
+Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD). via skype: @jiguiniz, Senior Policy Analyst at Ontario Ministry of Government Services @andrewfogg joins #OGT14 via skype.  import.io
+
+Open Government Licence establishes rules for gov't and citizens. Encourages people to use #opendata.
+
+PEG is providing #opendata as an NGO. Trying to answer questions like, is Winnipeg's poverty rate going up or down?
+
+Kirk Cumming is at #OGT14 to discuss "the beginning of @cityofwinnipeg open data journey." Manager of data & application services
+
+City's own data needs to be unlocked, shared, made usable for all public servants, says Cummings.
+
+Three classes of #opendata users: API users, data analysts (researchers/reporters), general public (want to answer Qs): Cummings
+
+The evening is best summarized in Tweets by Tessa Vanderhart.
+
+<div class="storify"><iframe src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg/embed?header=false&border=false" width="100%" height=750 frameborder=no allowtransparency=true></iframe><script src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg.js?header=false&border=false"></script><noscript>[<a href="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg" target="_blank">View the story "#OGT14: Open Government Tour stop in Winnipeg" on Storify</a>]</noscript></div>
