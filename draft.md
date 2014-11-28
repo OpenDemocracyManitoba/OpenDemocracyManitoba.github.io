@@ -14,15 +14,16 @@ On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of
 
 The event was co-moderated by Richard and myself (Kyle Geske of Open Democracy Manitoba). The Winnipeg guests were Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD), and Dennis Lewycky of the Social Planning Council of Winnipeg.
 
-We were happy with the turnout, which included a number of city journalists and election candidates including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
+We were happy with the turnout, which included a number of city journalists and candidates for the 2013 Winnipeg election, including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
 
-"Fundamentally, open data is about restoring trust with our government": @richardpietro
-
-Tired of the "vending machine government" @richardpietro describes: taxes in, services out? #opengov can help!
+The evening started with Richard explaining what Open Government and Open Data are and why they are important, with the help of a few memes.
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
-First panel: Access and why it's important
+> "Fundamentally, open data is about restoring trust with our government" - Richard Pietro
+
+## First panel: Access and why it's important
+
 @mawwelch, @colincraig1, Dennis Lewycky from SPCW, @COTkeith from  City of Toronto's Open Data team
 
 Paper is to #OpenData as KFC is to Canada Food Guide
@@ -37,7 +38,7 @@ Educating the public about open data.
 
 "There's not just some kind of accountability that comes with democracy. We're the accountants!"
 
-Second Half Meeting the Makers
+## Second Half Meeting the Makers
 
 Kirk Cumming, manager of data & application service for the City of Winnipeg, Charles Thrift of the International Institute for Sustainable Development (IISD). via skype: @jiguiniz, Senior Policy Analyst at Ontario Ministry of Government Services @andrewfogg joins #OGT14 via skype.  import.io
 
@@ -51,6 +52,6 @@ City's own data needs to be unlocked, shared, made usable for all public servant
 
 Three classes of #opendata users: API users, data analysts (researchers/reporters), general public (want to answer Qs): Cummings
 
-The evening is best summarized in Tweets by Tessa Vanderhart.
+The evening is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by [Tessa Vanderhart](https://twitter.com/tessavanderhart).
 
 <div class="storify"><iframe src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg/embed?header=false&border=false&template=slideshow" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg.js?header=false&border=false&template=slideshow"></script><noscript>[<a href="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg" target="_blank">View the story "#OGT14: Open Government Tour stop in Winnipeg" on Storify</a>]</noscript></div>
