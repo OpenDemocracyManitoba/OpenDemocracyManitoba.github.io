@@ -18,7 +18,7 @@ We were happy with the turnout, which included a number of city journalists and 
 
 The evening started with Richard explaining what Open Government and Open Data are and why they are important, with the help of a few memes.
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
 > "Fundamentally, open data is about restoring trust with our government"
 > - Richard Pietro
