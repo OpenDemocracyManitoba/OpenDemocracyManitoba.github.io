@@ -20,7 +20,8 @@ The evening started with Richard explaining what Open Government and Open Data a
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
-> "Fundamentally, open data is about restoring trust with our government" - Richard Pietro
+> "Fundamentally, open data is about restoring trust with our government"
+> - Richard Pietro
 
 ## First panel: Access and why it's important
 
