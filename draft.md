@@ -12,7 +12,7 @@ This is how I met Richard Pietro. After replying I would learn of his plan to dr
 
 On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
 
-The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). We were happy with the turnout, which included a number of city journalists and candidates for the 2013 Winnipeg election, including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
+The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). We were happy with the turnout of nearly seventy five people, which included a number of city journalists and three mayoral candidates for the 2014 Winnipeg Election: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
 
 The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes.
 
