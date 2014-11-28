@@ -10,7 +10,7 @@ It began with this tweet.
 
 This is how I met Richard Pietro. After replying I would learn of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so this past summer, in cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, entrepreneurs, and citizens.
 
-On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
+On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
 
 The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). We were happy with the turnout, which included a number of city journalists and candidates for the 2013 Winnipeg election, including three mayoral candidates: Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis.
 
@@ -23,7 +23,7 @@ The evening started with Richard defining Open Government and Open Data and why 
 
 ## First panel: Access and why it's important
 
-The first panel of guests comprised of Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, and Dennis Lewycky of the Social Planning Council of Winnipeg. We were also joined by Keith McDonald from the City of Toronto's Open Data team. 
+The first panel of guests comprised of Mary Agnes Welch of the Winnipeg Free Press, Colin Craig of the Canadian Taxpayers Federation, and Dennis Lewycky of the Social Planning Council of Winnipeg. We were also joined by Keith McDonald from the City of Toronto's Open Data team.
 
 Paper is to #OpenData as KFC is to Canada Food Guide
 
