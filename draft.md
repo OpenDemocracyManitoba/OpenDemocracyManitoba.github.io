@@ -3,12 +3,12 @@ layout: page
 title: Richard Pietro's Open Government Tour Retrospective
 ---
 
-It began with this tweet.
+It began with this tweet. This is how I met Richard Pietro.
 
 <blockquote class="twitter-tweet" lang="en"><p>Hello <a href="https://twitter.com/stungeye">@stungeye</a>! I read that you&#39;re part of Open Democracy Manitoba and thought you might be interested about a project I&#39;m working on :-)</p>&mdash; Richard Pietro (@richardpietro) <a href="https://twitter.com/richardpietro/status/456969530200580096">April 18, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This is how I met Richard Pietro. After replying I would learn of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so this past summer, in cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, entrepreneurs, and citizens.
+After replying I would learn of his plan to drive his motorcycle across the country promoting democratic engagement by way of technology, transparency and accountability. The intent of his tour was to introduce Open Government to Canadians. And so this past summer, in cities across Canada, Richard modeled civic engagement as an art form, curating open government discussions with public servants, programmers, journalists, entrepreneurs, and citizens.
 
 On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd of engaged citizens to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). The crowd was eager to hear Richard and guests introduce the Open Government movement with home grown examples.
 
