@@ -11,11 +11,11 @@ It began with this tweet. On replying I learnt of Richard's plan to tour Canada 
 
 > Open government is the governing doctrine which holds that citizens have the right to access the documents and proceedings of the government to allow for effective public oversight. [source](https://en.wikipedia.org/wiki/Open_government)
 
-![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
-
 On August 11th 2014 Richard Pietro’s Open Government Tour attracted a crowd to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). The crowd was eager to hear Richard and guests introduce the Open Government movement while discussing local Open Gov / Open Data ideas and initiatives. A number of city journalists and three mayoral candidates for the 2014 Winnipeg Election, Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis, were in attendance.
 
-The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). Although we'd spoken during the video chats used to plan the tour, I'd only met Ricard in person that morning. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him at a motorbike shop on Pembina followed by breakfast down the street at the Pancake house. Despite the bike problems he was dealing with Richard was in good spirits. With his bike out of commission, I shuttled Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
+![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
+
+The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I'd only met Ricard in person that morning. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him at a motorbike shop on Pembina followed by breakfast down the street at the Pancake house. Despite the bike problems he was dealing with Richard was in good spirits. With his bike out of commission, I shuttled Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
 
 The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes.
 
@@ -54,9 +54,17 @@ City's own data needs to be unlocked, shared, made usable for all public servant
 
 Three classes of #opendata users: API users, data analysts (researchers/reporters), general public (want to answer Qs): Cummings
 
-## Summary
+## Richard's Summary
 
-The evening is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by [Tessa Vanderhart](https://twitter.com/tessavanderhart).
+> Kyle Geske, Ken Harasym, Jody Gillis, Andrew Burton, Tessa Vanderhart, and Noah Erenberg were the folks that brought the #OGT14 Winnipeg event together and man, they couldn’t have been more awesome, and for so many different reason.
+ 
+> First, we had the perfect venue, awesome invited guests, lots of food, a dedicated person live tweeting the event, PLUS two cameramen capturing the event. The event ran like clockwork and afterwards the organizers told me their group had never organized an event before! If that’s the case, I can’t wait to see how good their events become once they become seasoned veterans lol.
+
+[Read the rest of Richard's Winnipeg OGT14 experience](http://www.webnotwar.ca/ogt14-week-7-update/).
+
+## Twitter Summary
+
+The evening's conversation is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by [Tessa Vanderhart](https://twitter.com/tessavanderhart).
 
 <div class="storify"><iframe src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg/embed?header=false&border=false&template=slideshow" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg.js?header=false&border=false&template=slideshow"></script><noscript>[<a href="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg" target="_blank">View the story "#OGT14: Open Government Tour stop in Winnipeg" on Storify</a>]</noscript></div>
 
