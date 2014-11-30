@@ -14,9 +14,9 @@ It began with this tweet. On replying I learnt of Richard's plan to tour Canada 
 On August 11th 2014 **Richard Pietro’s Open Government Tour** (OGT14) attracted a crowd to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). 
 
 ![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
-> Above: Richard Pietro with the Motorcycle he drove across Canada raising awareness about the Open Goverment movement.
+> Above: Richard Pietro with the motorcycle he drove across Canada raising awareness about the Open Goverment movement.
 
-Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I'd only met Ricard in person that day. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
+Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I'd only met Ricard in person the day of the event. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
 
 The Winnipeg OGT14 event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes. 
 
@@ -32,15 +32,12 @@ The crowd was eager to hear Richard and guests introduce the Open Government mov
 
 The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwelch) of the Winnipeg Free Press, [Colin Craig](https://twitter.com/colincraig1) of the Canadian Taxpayers Federation, and [Dennis Lewycky](http://dennislewycky.ca/about/) of the Social Planning Council of Winnipeg. We were also joined by [Keith McDonald](https://twitter.com/cotkeith) from the City of Toronto's Open Data team via Skype.
 
-Paper is to #OpenData as KFC is to Canada Food Guide
+Highlights:
 
-uses FIPPA to push for policy changes — i.e. where to find savings — and to investigate citizens' tips.
-
-Like journalism, technology is not objective, Lewycky says. Can be used in biased way. Or: different metrics can create bias.
-
-Magnes notes that the data is the START of a story, not the story itself. Data gives opportunity for stories that might be missed
-
-Educating the public about open data.
+* **Colin:** Open Data and [FIPPA Requests](http://www.gov.mb.ca/chc/fippa/index.html) can be used to push for policy changes. 
+* **Keith:** Paper is to Open Data as KFC is to the Canadian Food Guide.
+* **Mary Agnes:** Data in journalism as *starting place* for stories that might otherwise have been missed.
+* **Dennis:** A reminder that technology is not objective. Different metrics used to quantify and explain data can create bias.
 
 "There's not just some kind of accountability that comes with democracy. We're the accountants!"
 
