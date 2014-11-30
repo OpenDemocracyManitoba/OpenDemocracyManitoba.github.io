@@ -16,9 +16,9 @@ On August 11th 2014 **Richard Pietro’s Open Government Tour** (OGT14) attracte
 ![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
 > Above: Richard Pietro with the Motorcycle he drove across Canada raising awareness about the Open Goverment movement.
 
-The event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I'd only met Ricard in person that day. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
+Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I'd only met Ricard in person that day. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur Richard around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show.
 
-The evening event started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes. 
+The Winnipeg OGT14 event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes. 
 
 <iframe width="600" height="450" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
