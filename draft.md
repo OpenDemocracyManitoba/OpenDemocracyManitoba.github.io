@@ -11,7 +11,7 @@ It began with this tweet. On replying I learnt of Richard's plan to tour Canada 
 
 > Open government is the governing doctrine which holds that citizens have the right to access the documents and proceedings of the government to allow for effective public oversight. [source](https://en.wikipedia.org/wiki/Open_government)
 
-On August 11th 2014 Richard Pietro’s Open Government Tour **OGT14** attracted a crowd to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). 
+On August 11th 2014 **Richard Pietro’s Open Government Tour** (OGT14) attracted a crowd to the Millennium Library in downtown Winnipeg. The event was sponsored by [Open Democracy Manitoba](http://opendemocracymanitoba.ca), and hosted by [Community News Commons](http://www.communitynewscommons.org/) and the [Winnipeg Public Library](http://wpl.winnipeg.ca/library/). 
 
 ![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
 
