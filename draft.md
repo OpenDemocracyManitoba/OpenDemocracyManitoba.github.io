@@ -21,6 +21,7 @@ The evening event started with Richard defining Open Government and Open Data an
 
 <iframe width="600" height="450" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
+<br>
 The crowd was eager to hear Richard and guests introduce the Open Government movement while discussing local Open Gov / Open Data ideas and initiatives. A number of city journalists and three mayoral candidates for the 2014 Winnipeg Election, Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis, were in attendance along with 70+ engaged citizens.
 
 > "Fundamentally, open data is about restoring trust with our government"  
