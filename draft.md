@@ -17,7 +17,7 @@ On August 11th 2014 **Richard Pietro’s Open Government Tour** (OGT14) attracte
 ![Richard Pietro with Motorcycle](/public/images/2014-11-30-open-government-tour-recap.jpg)
 > Above: Richard Pietro with the motorcycle he drove across Canada raising awareness about the Open Goverment movement.
 
-Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I first met Ricard in person the day of the event. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur him around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show. We also got to spend the day chatting and getting to know each other.
+Although we'd spoken during the video chat planning sessions with other OGT14 "City Champions", I first met Richard in person the day of the event. Fellow ODM member [Ken Harasym](https://twitter.com/kenharasym) and I met him in the morning at a motorbike shop on Pembina, followed by breakfast at the Pancake house. Despite [the bike problems he was dealing with](http://www.webnotwar.ca/ogt14-week-7-update/) Richard was in good spirits. With his bike out of commission, I voluteered to chauffeur him around for the day. This meant I was able to join him discussing Open Government and Open Data with [Dahlia Kurtz](https://twitter.com/DahliaKurtz) on her [CJOB](http://www.cjob.com) radio show. We also got to spend the day chatting and getting to know each other.
 
 The Winnipeg OGT14 event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes. 
 
@@ -54,7 +54,7 @@ The second panel of guests included [Kirk Cumming](https://www.linkedin.com/pub/
 
 Kirk also fielded a number of questions from the journalists in the audience regarding the city's randomization of locations details in their open datasets.
 
-## Richard's Summary
+## Richard's Summary of the Winnipeg Event
 
 > Kyle Geske, Ken Harasym, [Jody Gillis](https://twitter.com/jody_gillis), [Andrew Burton](https://twitter.com/chefquix), [Tessa Vanderhart](https://twitter.com/tessavanderhart), and [Noah Erenberg](https://twitter.com/CNCWpg) were the folks that brought the #OGT14 Winnipeg event together and man, they couldn’t have been more awesome, and for so many different reason.
  
@@ -62,7 +62,7 @@ Kirk also fielded a number of questions from the journalists in the audience reg
 
 [Read the rest of Richard's Winnipeg OGT14 experience](http://www.webnotwar.ca/ogt14-week-7-update/).
 
-## Twitter Summary
+## The Twitter Summary
 
 The evening's conversation is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by Tessa Vanderhart.
 
@@ -70,4 +70,4 @@ The evening's conversation is best [summarized in Tweets](https://storify.com/te
 
 ## Part Two - The Return of the #OGT14
 
-On September 6th we held a smaller, more informal, Open Government Tour event when Richard stopped in Winnipeg on the return leg of the tour. This event was held at Cousin's Deli.
+On September 6th we held a smaller Open Government Tour event when Richard stopped in Winnipeg on the return leg of the tour. This event was much more informal that the previous one. We gathered at Cousin's Deli and discussed Open Government over a few drinks. Richard gave us a recap of the western Canada portion of the tour. We also discussed the dataset available on [date.winnipeg.ca](http://data.winnipeg.ca) and how best to promote Open Government as a citizen.
