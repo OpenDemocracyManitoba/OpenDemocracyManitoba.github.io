@@ -58,7 +58,7 @@ Three classes of #opendata users: API users, data analysts (researchers/reporter
 
 ## Richard's Summary
 
-> Kyle Geske, Ken Harasym, Jody Gillis, Andrew Burton, Tessa Vanderhart, and Noah Erenberg were the folks that brought the #OGT14 Winnipeg event together and man, they couldn’t have been more awesome, and for so many different reason.
+> Kyle Geske, Ken Harasym, [Jody Gillis](https://twitter.com/jody_gillis), [Andrew Burton](https://twitter.com/chefquix), [Tessa Vanderhart](https://twitter.com/tessavanderhart), and [Noah Erenberg](https://twitter.com/CNCWpg) were the folks that brought the #OGT14 Winnipeg event together and man, they couldn’t have been more awesome, and for so many different reason.
  
 > First, we had the perfect venue, awesome invited guests, lots of food, a dedicated person live tweeting the event, PLUS two cameramen capturing the event. The event ran like clockwork and afterwards the organizers told me their group had never organized an event before! If that’s the case, I can’t wait to see how good their events become once they become seasoned veterans lol.
 
@@ -66,7 +66,7 @@ Three classes of #opendata users: API users, data analysts (researchers/reporter
 
 ## Twitter Summary
 
-The evening's conversation is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by [Tessa Vanderhart](https://twitter.com/tessavanderhart).
+The evening's conversation is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by Tessa Vanderhart.
 
 <div class="storify"><iframe src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg/embed?header=false&border=false&template=slideshow" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg.js?header=false&border=false&template=slideshow"></script><noscript>[<a href="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg" target="_blank">View the story "#OGT14: Open Government Tour stop in Winnipeg" on Storify</a>]</noscript></div>
 
