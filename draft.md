@@ -38,7 +38,7 @@ The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwel
 * **Mary Agnes:** Data in journalism as *starting place* for stories that might otherwise have been missed.
 * **Dennis:** A reminder that technology is not objective. Different metrics used to quantify and explain data can create bias.
 
-When asked by audience member [Dan Bernardic](https://twitter.com/bernardic) about what all this means for the average citizen, I tried to express what I see as the importance of Open Government. That government accountability isn't something that comes pre-packaged with a democracy. We the citizens are the accountants but an account needs their spreadsheets. ;)
+When asked by audience member [Dan Bernardic](https://twitter.com/bernardic) about what all this means for the average citizen, I tried to express what I see as the importance of Open Government. That government accountability isn't something that comes pre-packaged with a democracy. We the citizens are the accountants, but accountants need their spreadsheets. ;)
 
 ## Second Half: Meeting the Makers
 
