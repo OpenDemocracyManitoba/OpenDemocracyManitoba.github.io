@@ -32,7 +32,7 @@ The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwel
 
 #### Some Highlights
 
-* **Richard:** "Fundamentally, Open Data is about restoring trust with our government."  
+* **Richard:** Open Data is about restoring trust in our government.
 * **Colin:** Open Data and [FIPPA Requests](http://www.gov.mb.ca/chc/fippa/index.html) can be used by citizens or organizations to push government for policy changes. 
 * **Keith:** "Paper is to Open Data as KFC is to the Canadian Food Guide."
 * **Mary Agnes:** Data in journalism as *starting place* for stories that might otherwise have been missed.
