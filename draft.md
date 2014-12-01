@@ -29,11 +29,11 @@ The Winnipeg OGT14 event was co-moderated by Richard and myself ([Kyle Geske](ht
 <br>
 The crowd was eager to hear Richard and guests introduce the Open Government movement while discussing local Open Gov / Open Data ideas and initiatives. A number of city journalists and three mayoral candidates for the 2014 Winnipeg Election, Brian Bowman, Robert-Falcon Oullette and Judy Wasylycia-Leis, were in attendance along with 70+ engaged citizens.
 
-## First panel: Access and why it's important
+## First Half: Access and why it's important
 
 The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwelch) of the Winnipeg Free Press, [Colin Craig](https://twitter.com/colincraig1) of the Canadian Taxpayers Federation, and [Dennis Lewycky](http://dennislewycky.ca/about/) of the Social Planning Council of Winnipeg. We were also joined by [Keith McDonald](https://twitter.com/cotkeith) from the City of Toronto's Open Data team via Skype.
 
-### Some Highlights
+#### Some Highlights
 
 * **Colin:** Open Data and [FIPPA Requests](http://www.gov.mb.ca/chc/fippa/index.html) can be used to push for policy changes. 
 * **Keith:** Paper is to Open Data as KFC is to the Canadian Food Guide.
@@ -42,9 +42,11 @@ The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwel
 
 "There's not just some kind of accountability that comes with democracy. We're the accountants!"
 
-## Second Half Meeting the Makers
+## Second Half: Meeting the Makers
 
 The second panel of guests included [Kirk Cumming](https://www.linkedin.com/pub/kirk-cumming/13/691/71), manager of data & application service for the City of Winnipeg, [Charles Thrift](https://www.linkedin.com/pub/charles-thrift/15/18b/384) of the International Institute for Sustainable Development (IISD). [Jose Javier](http://twitter.com/jiguiniz), Senior Policy Analyst at Ontario Ministry of Government Services, and [Andrew Fogg](http://twitter.com/andrewfogg) of [import.io](import.io) joined us by way of Skype.
+
+#### Some Highlights
 
 Open Government Licence establishes rules for gov't and citizens. Encourages people to use #opendata.
 
