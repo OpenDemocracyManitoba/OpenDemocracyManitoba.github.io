@@ -49,7 +49,7 @@ The second panel of guests included [Kirk Cumming](https://www.linkedin.com/pub/
 * **Kirk:** The City of Winnipeg's Open Data journey begins [data.winnipeg.ca](http://data.winnipeg.ca). The three types of users being API users (programmers), data analysts (researchers/reporters), and the general public.
 * **Charles:** [Peg](http://www.mypeg.ca/) is providing Open Data as a Non-Governmental Organization to inspire action on community health.
 * **Jose:** The [Open Government Licence](http://open.canada.ca/en/open-government-licence-canada) establishes rules for governments and citizens. Encourages people to use Open Data.
-* **Andrew:** [Import.io](https://import.io/) as a way for non-programmers to scrape data from the web.
+* **Andrew:** [Import.io](https://import.io/) as a way for non-programmers to extract data that exists on public websites.
 * **Richard:** Instead of getting on the government case when data is incorrect or poorly organized, let's get together and clean up the data.
 
 Kirk also fielded a number of questions from the journalists in the audience regarding the city's randomization of locations details in their open datasets.
