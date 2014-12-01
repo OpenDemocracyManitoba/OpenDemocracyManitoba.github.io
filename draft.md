@@ -21,9 +21,6 @@ Although we'd spoken during the video chat planning sessions with other OGT14 "C
 
 The Winnipeg OGT14 event was co-moderated by Richard and myself ([Kyle Geske](http://twitter.com/stungeye) of Open Democracy Manitoba). The evening started with Richard defining Open Government and Open Data and why they are important, with the help of a few memes. 
 
-> "Fundamentally, open data is about restoring trust with our government"  
-> - Richard Pietro
-
 <iframe width="600" height="450" src="//www.youtube.com/embed/f9DtEUJwevo" frameborder="0" allowfullscreen></iframe>
 
 <br>
@@ -35,12 +32,13 @@ The first panel of guests included [Mary Agnes Welch](https://twitter.com/mawwel
 
 #### Some Highlights
 
-* **Colin:** Open Data and [FIPPA Requests](http://www.gov.mb.ca/chc/fippa/index.html) can be used to push for policy changes. 
-* **Keith:** Paper is to Open Data as KFC is to the Canadian Food Guide.
+* **Richard:** "Fundamentally, Open Data is about restoring trust with our government."  
+* **Colin:** Open Data and [FIPPA Requests](http://www.gov.mb.ca/chc/fippa/index.html) can be used by citizens or organizations to push government for policy changes. 
+* **Keith:** "Paper is to Open Data as KFC is to the Canadian Food Guide."
 * **Mary Agnes:** Data in journalism as *starting place* for stories that might otherwise have been missed.
 * **Dennis:** A reminder that technology is not objective. Different metrics used to quantify and explain data can create bias.
 
-"There's not just some kind of accountability that comes with democracy. We're the accountants!"
+When asked by audience member [Dan Bernardic](https://twitter.com/bernardic) about what all this means for the average citizen, I tried to express what I see as the importance of Open Government. That government accountability isn't something that comes pre-packaged with a democracy. We the citizens are the accountants but an account needs their spreadsheets. ;)
 
 ## Second Half: Meeting the Makers
 
