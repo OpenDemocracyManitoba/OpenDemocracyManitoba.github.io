@@ -42,19 +42,17 @@ When asked by audience member [Dan Bernardic](https://twitter.com/bernardic) abo
 
 ## Second Half: Meeting the Makers
 
-The second panel of guests included [Kirk Cumming](https://www.linkedin.com/pub/kirk-cumming/13/691/71), manager of data & application service for the City of Winnipeg, [Charles Thrift](https://www.linkedin.com/pub/charles-thrift/15/18b/384) of the International Institute for Sustainable Development (IISD). [Jose Javier](http://twitter.com/jiguiniz), Senior Policy Analyst at Ontario Ministry of Government Services, and [Andrew Fogg](http://twitter.com/andrewfogg) of [import.io](import.io) joined us by way of Skype.
+The second panel of guests included [Kirk Cumming](https://www.linkedin.com/pub/kirk-cumming/13/691/71), manager of data & application service for the City of Winnipeg and [Charles Thrift](https://www.linkedin.com/pub/charles-thrift/15/18b/384) of the International Institute for Sustainable Development (IISD). [Jose Javier](http://twitter.com/jiguiniz), Senior Policy Analyst at Ontario Ministry of Government Services, and [Andrew Fogg](http://twitter.com/andrewfogg) of [import.io](import.io) joined us by way of Skype.
 
 #### Some Highlights
 
-Open Government Licence establishes rules for gov't and citizens. Encourages people to use #opendata.
+* **Kirk:** The City of Winnipeg's Open Data journey begins [data.winnipeg.ca](http://data.winnipeg.ca). The three types of users being API users (programmers), data analysts (researchers/reporters), and the general public.
+* **Charles:** [Peg](http://www.mypeg.ca/) is providing Open Data as a Non-Governmental Organization to inspire action on community health.
+* **Jose:** The [Open Government Licence](http://open.canada.ca/en/open-government-licence-canada) establishes rules for governments and citizens. Encourages people to use Open Data.
+* **Andrew:** [Import.io](https://import.io/) as a way for non-programmers to scrape data from the web.
+* **Richard:** Instead of getting on the government case when data is incorrect or poorly organized, let's get together and clean up the data.
 
-PEG is providing #opendata as an NGO. Trying to answer questions like, is Winnipeg's poverty rate going up or down?
-
-Kirk Cumming is at #OGT14 to discuss "the beginning of @cityofwinnipeg open data journey." Manager of data & application services
-
-City's own data needs to be unlocked, shared, made usable for all public servants, says Cummings.
-
-Three classes of #opendata users: API users, data analysts (researchers/reporters), general public (want to answer Qs): Cummings
+Kirk also fielded a number of questions from the journalists in the audience regarding the city's randomization of locations details in their open datasets.
 
 ## Richard's Summary
 
