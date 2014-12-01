@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Richard Pietro's Open Government Tour Retrospective
+title: Richard Pietro's Open Government Tour - Winnipeg Retrospective
 ---
 
 <br>
