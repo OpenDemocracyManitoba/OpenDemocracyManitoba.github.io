@@ -70,4 +70,4 @@ The evening's conversation is best [summarized in Tweets](https://storify.com/te
 
 ## Part Two - The Return of the #OGT14
 
-On September 6th we held a smaller Open Government Tour event when Richard stopped in Winnipeg on the return leg of the tour. This event was much more informal that the previous one. We gathered at Cousin's Deli and discussed Open Government over a few drinks. Richard gave us a recap of the western Canada portion of the tour. We also discussed the dataset available on [date.winnipeg.ca](http://data.winnipeg.ca) and how best to promote Open Government as a citizen.
+On September 6th we held a smaller Open Government Tour event when Richard stopped in Winnipeg on the return leg of the tour. This event was much more informal that the previous one. We gathered at Cousin's Deli and discussed Open Government over a few drinks. Richard gave us a recap of the western Canada portion of the tour. We also discussed the dataset available on [data.winnipeg.ca](http://data.winnipeg.ca) and how best to promote Open Government as a citizen.
