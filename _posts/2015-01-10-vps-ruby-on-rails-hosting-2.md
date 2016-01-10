@@ -311,7 +311,7 @@ At this point you might also want to install [fail2ban](http://www.fail2ban.org/
 - [How To Protect SSH with fail2ban on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
 - [How to Secure an Nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban) (I only used the `badbots` and `noscript` jails.)
 
-Be cautious with fail2ban. You don't want to lock yourself at of your own server. If you do get blocked, you can login using the Digital Ocean web console for your droplet.
+Be cautious with fail2ban. You don't want to lock yourself out of your own server. If you do get blocked, you can login using the Digital Ocean web console for your droplet.
 
 ### Step 12 - Test Your Sever
 
