@@ -72,9 +72,11 @@ From now on when I need to run a command as root I will proceed the command with
 
 Not shown in this tutorial: [How to use SSH keys with Digital Ocean Droplets](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-### Step 3 - Create a Swap File
+### Step 3 - Create a Swap File (Optional)
 
-Some of the following steps require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). I created a 1GB swapfile:
+Some of the following steps require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). Feel free to skip this step.
+
+I created a 1GB swapfile:
 
 ``` 
 sudo fallocate -l 1G /swapfile
@@ -90,7 +92,7 @@ Then open `/etc/fstab` with sudo privs and add:
 /swapfile       none    swap    sw      0       0 
 ```
 
-Using swap too agressively on an SSD drive can lead to hardware degreadation. So let's dial down the "[swappiness](https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F)" from 60 to 10:
+Using swap too aggressively on a SSD drive can lead to hardware degreadation. So let's dial down the "[swappiness](https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F)" from 60 to 10:
 
 ``` 
 echo 10 | sudo tee /proc/sys/vm/swappiness
