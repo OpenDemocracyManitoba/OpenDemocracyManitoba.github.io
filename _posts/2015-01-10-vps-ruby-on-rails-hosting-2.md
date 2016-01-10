@@ -92,14 +92,14 @@ Then open `/etc/fstab` with sudo privs and add:
 /swapfile       none    swap    sw      0       0 
 ```
 
-Using swap too aggressively on a SSD drive can lead to hardware degreadation. So let's dial down the "[swappiness](https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F)" from 60 to 10:
+Using swap too aggressively on a SSD drive can lead to hardware degradation. So let's dial down the "[swappiness](https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F)" from 60 to 10:
 
 ``` 
 echo 10 | sudo tee /proc/sys/vm/swappiness
 echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
 ```
 
-### Step 4 - Install Required Packages
+### Step 4 - Install Required Ubuntu Packages
 
 Let's start by upgrading all the pre-installed packages:
 
