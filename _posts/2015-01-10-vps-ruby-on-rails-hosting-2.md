@@ -5,11 +5,9 @@ title: VPS Ruby on Rails Hosting Revisted
 
 *ODM Technology Post*
 
-**In this post we will configure Ruby on Rails deployment on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS. This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).**
-
-# ODM Technology Post
-
 **In this post we will configure Ruby on Rails deployment on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
+
+**This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).**
 
 Our final hosting setup will be:
 
@@ -29,9 +27,9 @@ On our existing VPS we are hosting close to 30 websites, the majority of which a
 
 ### Automation and Config Management
 
-This post does not rely on a configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/), [Chef](http://www.getchef.com/), or [Ansible](http://www.ansible.com).
+This post does not rely on a configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/), [Chef](http://www.getchef.com/), or [Ansible](http://www.ansible.com). Considering all the changes when compared with [the install I did in 2014](/2014/04/07/vps-ruby-on-rails-hosting/) I'm glad I hadn't automated the process yet.
 
-That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph. Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/articles/how-to-1-click-install-ruby-on-rails-on-ubuntu-12-10-with-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger. 
+That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph. Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/tutorials/how-to-use-the-ruby-on-rails-one-click-application-on-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger. 
 
 
 
