@@ -17,21 +17,23 @@ Our final hosting setup will be:
 - Database Server: [PostgreSQL](http://www.postgresql.org/)
 - Language and Framework: [Ruby](http://www.ruby-lang.org/) 2.x & [Rails](http://rubyonrails.org/) 4.x
 
-**WARNING**: *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
+*This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
 
 ### Background Information
 
-A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites using [Digital Ocean](https://m.do.co/c/9c57a647fd20).
+A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server from [Digital Ocean](https://m.do.co/c/9c57a647fd20) to host [ODM](http://opendemocracymanitoba.ca) Ruby projects.
 
 The 512MB plan on [Digital Ocean](https://m.do.co/c/9c57a647fd20) is only $5 a month. Nice.
 
 ### Automation and Config Management
 
-This post does not rely on a configuration management tool. I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/), [Chef](http://www.getchef.com/), or [Ansible](http://www.ansible.com). Considering all the changes when compared with [the install I did in 2014](/2014/04/07/vps-ruby-on-rails-hosting/) I'm glad I hadn't automated the process yet.
+This post does not rely on a configuration management tool.
 
-That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph. Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/tutorials/how-to-use-the-ruby-on-rails-one-click-application-on-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger. 
+I figured I'd be done setting up the server long before I'd figured out the intricacies of [Puppet](http://puppetlabs.com/), [Chef](http://www.getchef.com/), or [Ansible](http://www.ansible.com). Considering all the changes when compared with [the install I did in 2014](/2014/04/07/vps-ruby-on-rails-hosting/) I'm glad I hadn't automated the process yet.
 
+That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph.
 
+Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/tutorials/how-to-use-the-ruby-on-rails-one-click-application-on-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger.
 
 ### Step 1 - Create the Droplet
 
@@ -74,7 +76,7 @@ Not shown in this tutorial: [How to use SSH keys with Digital Ocean Droplets](ht
 
 ### Step 3 - Create a Swap File (Optional)
 
-Some of the following steps require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). Feel free to skip this step.
+Some of the following steps require compilation, so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). Feel free to skip this step.
 
 I created a 1GB swapfile:
 
@@ -108,13 +110,13 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-You may need to reboot after that:
+Reboot after that:
 
 ``` 
 sudo reboot
 ```
 
-Then we install all the packages we need 
+Then install the ubuntu packages we need 
 
 ``` 
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash 
@@ -193,7 +195,7 @@ gem install bundler
 
 ### Step 7 - Install Passenger & Nginx:
 
-First we install the [Phusion Passenger](https://www.phusionpassenger.com/) and the [Nginx](http://nginx.org/) web server:
+Install [Phusion Passenger](https://www.phusionpassenger.com/) and the [Nginx](http://nginx.org/) web server:
 
 ``` 
 # Install our PGP key and add HTTPS support for APT
@@ -290,6 +292,8 @@ server {
 
 If you've mapped your droplet to a domain, replace `localhost` with the name of your domain.
 
+Use [sites-available / sites-enabled config files](https://www.linode.com/docs/websites/nginx/how-to-configure-nginx#server-virtual-domains-configuration) if you want to host multiple projects on this server.
+
 ### Step 11 - Extra Security stuff:
 
 Enable the [ufw](https://help.ubuntu.com/community/UFW) Firewall to only permit web (port 80) and ssh (port 22) traffic:
@@ -307,13 +311,13 @@ At this point you might also want to install [fail2ban](http://www.fail2ban.org/
 - [How To Protect SSH with fail2ban on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
 - [How to Secure an Nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban) (I only used the `badbots` and `noscript` jails.)
 
-Be cautious with fail2ban. You don't want to lock yourself at of your own server.
+Be cautious with fail2ban. You don't want to lock yourself at of your own server. If you do get blocked, you can login using the Digital Ocean web console for your droplet.
 
 ### Step 12 - Test Your Sever
 
 Congrats! At this point you should be able to load your Rails app via a web browser. When testing your app be sure to trigger actions that both read and write to your database to ensure that Postgres is properly configured.
 
-### Keeping Your System Up To Date
+### Step 13 - Keeping Your System Up To Date
 
 When you connect via SSH to your droplet a login message will let you know if there are pending security updates. To download and install these updates, run the following commands:
 
