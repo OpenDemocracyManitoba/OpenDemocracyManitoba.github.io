@@ -21,9 +21,9 @@ Our final hosting setup will be:
 
 ### Background Information
 
-A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites. Before developing the new version of [WinnipegElection.ca](http://winnipegelection.ca) I wanted to move our sites from their existing [Rackspace](http://www.rackspace.com) VPS to a fresh VPS with [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20).
+A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites using [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20).
 
-On our existing VPS we are hosting close to 30 websites, the majority of which are not ODM projects. Some of these sites run PHP, some are Rails, and a few run Perl. The idea was to create two VPSs, isolating all PHP sites on one and all Rails sites on the other (while decommissioning the Perl sites). Our decision to move from Rackspace to Digital Ocean was based on price as well as on the simplicity of the Digital Ocean admin dashboard. The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
+The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
 
 ### Automation and Config Management
 
