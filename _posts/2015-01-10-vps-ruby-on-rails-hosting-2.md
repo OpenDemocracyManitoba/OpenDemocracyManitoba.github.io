@@ -5,7 +5,7 @@ title: VPS Ruby on Rails Hosting Revisted
 
 *ODM Technology Post*
 
-**In this post we will configure Ruby on Rails deployment on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
+**In this post we will configure Ruby on Rails on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
 
 **This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).**
 
@@ -74,7 +74,7 @@ Not shown in this tutorial: [How to use SSH keys with Digital Ocean Droplets](ht
 
 ### Step 3 - Create a Swap File
 
-Some of the following steps require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/articles/how-to-add-swap-on-ubuntu-12-04). I created a 1GB swapfile:
+Some of the following steps require compilation and so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). I created a 1GB swapfile:
 
 ``` 
 sudo fallocate -l 1G /swapfile
@@ -302,7 +302,7 @@ sudo ufw enable
 
 At this point you might also want to install [fail2ban](http://www.fail2ban.org/). I found the following two tutorials helpful:
 
-- [How To Protect SSH with fail2ban on Ubuntu 12.04](https://www.digitalocean.com/community/articles/how-to-protect-ssh-with-fail2ban-on-ubuntu-12-04)
+- [How To Protect SSH with fail2ban on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
 - [How to Secure an Nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban) (I only used the `badbots` and `noscript` jails.)
 
 Be cautious with fail2ban. You don't want to lock yourself at of your own server.
