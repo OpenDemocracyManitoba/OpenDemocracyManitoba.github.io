@@ -5,7 +5,7 @@ title: VPS Ruby on Rails Hosting Revisted
 
 *ODM Technology Post*
 
-**In this post we will configure Ruby on Rails on a [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) VPS.**
+**In this post we will configure Ruby on Rails on a [Digital Ocean](https://m.do.co/c/9c57a647fd20) VPS.**
 
 **This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).**
 
@@ -21,9 +21,9 @@ Our final hosting setup will be:
 
 ### Background Information
 
-A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites using [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20).
+A VPS is a [Virtual Private Server](https://en.wikipedia.org/wiki/Virtual_private_server). In our case, a virtualized Ubuntu Linux server used to host the ODM websites using [Digital Ocean](https://m.do.co/c/9c57a647fd20).
 
-The 512MB plan on [Digital Ocean]( https://www.digitalocean.com/?refcode=9c57a647fd20) is only $5 a month. Nice.
+The 512MB plan on [Digital Ocean](https://m.do.co/c/9c57a647fd20) is only $5 a month. Nice.
 
 ### Automation and Config Management
 
