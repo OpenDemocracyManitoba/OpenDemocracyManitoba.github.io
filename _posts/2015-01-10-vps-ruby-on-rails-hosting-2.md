@@ -7,7 +7,7 @@ title: VPS Ruby on Rails Hosting Revisted
 
 **In this post we will configure Ruby on Rails on a [Digital Ocean](https://m.do.co/c/9c57a647fd20) VPS.**
 
-**This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).** This article was originally posted in January of 2015. It was updated with newer versions OS and associated software in November of 2016.
+**This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).** This article was originally posted in January of 2015, but was updated again in November of 2016.
 
 Our final hosting setup will be:
 
