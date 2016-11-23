@@ -7,7 +7,7 @@ title: VPS Ruby on Rails Hosting Revisted
 
 **In this post we will configure Ruby on Rails on a [Digital Ocean](https://m.do.co/c/9c57a647fd20) VPS.**
 
-**This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).**
+**This is an update to [a similar post from two years ago](/2014/04/07/vps-ruby-on-rails-hosting/).** This article was originally posted in January of 2015. It was updated with newer versions OS and associated software in November of 2016.
 
 Our final hosting setup will be:
 
@@ -15,7 +15,7 @@ Our final hosting setup will be:
 - Web Server: [Nginx](http://nginx.org/)
 - Rails Hosting: [Phussion Passenger](https://www.phusionpassenger.com/)
 - Database Server: [PostgreSQL](http://www.postgresql.org/)
-- Language and Framework: [Ruby](http://www.ruby-lang.org/) 2.x & [Rails](http://rubyonrails.org/) 4.x
+- Language and Framework: [Ruby](http://www.ruby-lang.org/) 2.x & [Rails](http://rubyonrails.org/) 5.x
 
 *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
 
@@ -33,7 +33,7 @@ I figured I'd be done setting up the server long before I'd figured out the intr
 
 That said, if you can see yourself setting up multiple servers following this tutorial, you may wish to look into one of the automated provisioning solution listed in the previous paragraph.
 
-Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/tutorials/how-to-use-the-ruby-on-rails-one-click-application-on-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger.
+Also, if you only plan on hosting one Rails app on your VPS, [Digital Ocean's one-click Rails install](https://www.digitalocean.com/community/tutorials/how-to-use-the-ruby-on-rails-one-click-application-on-digitalocean) might be the easiest solution. Their one-click install uses [RVM](http://rvm.beginrescueend.com/) instead of rbenv and [Unicorn](http://unicorn.bogomips.org/) in place of Passenger. Although, fair warning, it requires much more than just one-click. 
 
 ### Step 1 - Create the Droplet
 
@@ -41,7 +41,7 @@ Digital Ocean (DO) calls their VPS instances Droplets. Once you have a DO accoun
 
 - Size: 1GB
 - Region: Toronto 1
-- Linux Distribution: Ubuntu 14.04 LTS
+- Linux Distribution: Ubuntu 16.04 LTS
 
 ### Step 2 - User Setup
 
@@ -119,8 +119,8 @@ sudo reboot
 Then install the ubuntu packages we need 
 
 ``` 
-curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash 
-sudo apt-get install git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.3 gconf2 libcurl4-openssl-dev imagemagick zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev sqlite3 libxml2-dev libxslt1-dev python-software-properties libffi-dev
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash 
+sudo apt-get install git g++ make nodejs libsqlite3-dev postgresql postgresql-contrib postgresql-server-dev-9.5 gconf2 libcurl4-openssl-dev imagemagick zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev sqlite3 libxml2-dev libxslt1-dev python-software-properties libffi-dev
 ```
 
 (The first line enables the installation of node.js for CoffeeScript support in Rails.)
@@ -176,8 +176,8 @@ source ~/.bash_profile
 Install Ruby (the latest version at the time of this post was 2.3.0):
 
 ``` 
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.3
+rbenv global 2.3.3
 ```
 
 Test your install with version switch:
@@ -203,7 +203,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CA
 sudo apt-get install -y apt-transport-https ca-certificates
 
 # Add our APT repository
-sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
+sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger xenial main > /etc/apt/sources.list.d/passenger.list'
 sudo apt-get update
 
 # Install Passenger + Nginx
@@ -216,11 +216,10 @@ Enable Passenger in the Nginx config file:
 sudo vim /etc/nginx/nginx.conf
 ```
 
-And uncomment (remove the #s) from the following lines:
+And uncomment (remove the #) from the following lines:
 
 ``` 
-# passenger_root /some-path/locations.ini;
-# passenger_ruby /usr/bin/passenger_free_ruby;
+# include /etc/nginx/passenger.conf;
 ```
 
 Re-start Nginx:
@@ -231,7 +230,7 @@ sudo service nginx restart
 
 ### Step 8 - Install Your Rails App
 
-Create the /var/www folder and give it permissions.
+Create the /var/www folder and give it permissions. If /var/www already exists you can skip the `mkdir` step.
 
 ``` 
 sudo groupadd www-pub
@@ -272,13 +271,24 @@ Remove sqlite from the Gemfile and replace it with the pg gem. And then update:
 bundle update
 ```
 
-Edit the `config/database.yml` [for use with Postgres](http://guides.rubyonrails.org/configuring.html#configuring-a-database) using the role/password you created in step 5.
+Edit the `config/database.yml` [for use with Postgres](http://guides.rubyonrails.org/configuring.html#configuring-a-database) using the role/password you created in step 5. A sample production config might look like this:
+
+```
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  database: myapp_production
+  username: myapp_postgres_user
+  password: thepasswordyoupickedinstep5
+```
 
 Don't forget to run your migration!
 
 ### Step 10 - Configure Nginx to Host Your Rails App
 
-To test your app, here's simple /etc/nginx/nginx.conf server block:
+To test your app, here's simple ngnix server block that you can put in your `/etc/nginx/sites-available/default` config file. You will need to edit this file using `sudo` and you should replace the existing server block that is already present in the file.
 
 ``` 
 server {
@@ -290,11 +300,25 @@ server {
 }
 ```
 
-If you've mapped your droplet to a domain, replace `localhost` with the name of your domain.
+Note that the folder you specific for the `root` must point to the `public` folder of the app you cloned into the `/var/www/` folder. If you've mapped your droplet to a domain, replace `localhost` with the name of your domain.
+
+You can also set your `rails_env` to `production` if this is meant to be a production deployment. Doing so means you need to perform one extra step, described below as step 11.
 
 Use [sites-available / sites-enabled config files](https://www.linode.com/docs/websites/nginx/how-to-configure-nginx#server-virtual-domains-configuration) if you want to host multiple projects on this server.
 
-### Step 11 - Extra Security stuff:
+### Step 11 - Configure Rails for Production
+
+When Rails runs in production mode there is an extra configuration step that you must before. You can skip this step if you set your `rails_env` to `development` in the last step.
+
+In the `config` folder of your Rails Project you will find a file named `secrets.yml`. When running in production mode you will need to have a production `secret_key_base` set in this file. By default the file is configured to look for this secret in an OS environment variable called `SECRET_KEY_BASE`. You can also hardcode a secret into this file, but if you do, **be sure to remove the `secrets.yml` from your git repo**. You do not want to accidentally expose this secret to the world by pushing your project to a public Github repo. Rails uses this secret key to do things like encrypt session cookies, so exposing this secret would be a large security vulnerability.
+
+Secrets can be generated from the command line by running the following command from your project folder:
+
+```
+rake secret
+```
+
+### Step 12 - Extra Security Stuff (Optional)
 
 Enable the [ufw](https://help.ubuntu.com/community/UFW) Firewall to only permit web (port 80) and ssh (port 22) traffic:
 
@@ -313,11 +337,11 @@ At this point you might also want to install [fail2ban](http://www.fail2ban.org/
 
 Be cautious with fail2ban. You don't want to lock yourself out of your own server. If you do get blocked, you can login using the Digital Ocean web console for your droplet.
 
-### Step 12 - Test Your Sever
+### Step 13 - Test Your Sever
 
 Congrats! At this point you should be able to load your Rails app via a web browser. When testing your app be sure to trigger actions that both read and write to your database to ensure that Postgres is properly configured.
 
-### Step 13 - Keeping Your System Up To Date
+### Step 14 - Keeping Your System Up To Date
 
 When you connect via SSH to your droplet a login message will let you know if there are pending security updates. To download and install these updates, run the following commands:
 
