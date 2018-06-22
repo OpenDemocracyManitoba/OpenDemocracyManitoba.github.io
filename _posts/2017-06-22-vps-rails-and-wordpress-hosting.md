@@ -16,9 +16,9 @@ Our final hosting setup will be:
 - Rails Hosting: [Phussion Passenger](https://www.phusionpassenger.com/)
 - Database Server: [MariaDb](https://mariadb.com/)
 - Language and Framework: [Ruby](http://www.ruby-lang.org/) 1.87 (legacy) & 2.x, plus [Rails](http://rubyonrails.org/) 5.x
-- Language and Framework: [PHP][http://php.net] 7.x and [Wordpress](http://wordpress.org) 4.9.x
+- Language and Framework: [PHP](http://php.net) 7.x and [Wordpress](http://wordpress.org) 4.9.x
 
-**NOTE: ** Used MariaDB instead of Postgres because we need to install Wordpress.
+**NOTE:** Used MariaDB instead of Postgres because we need to install Wordpress.
 
 *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
 
