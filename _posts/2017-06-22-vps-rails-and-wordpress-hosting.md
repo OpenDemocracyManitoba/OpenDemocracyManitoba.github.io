@@ -7,7 +7,7 @@ title: VPS Wordpress & Rails Hosting
 
 **In this post we will configure Rails and Workpress on a [Digital Ocean](https://m.do.co/c/9c57a647fd20) VPS.**
 
-This is an update to [a similar post from two years ago](/2015/01/10/vps-ruby-on-rails-hosting-2/). 
+This is an update to [a similar post from two years ago](/2015/01/10/vps-ruby-on-rails-hosting-2/), which was an update of [a post from 2014](/2014/04/07/vps-ruby-on-rails-hosting/). 
 
 Our final hosting setup will be:
 
