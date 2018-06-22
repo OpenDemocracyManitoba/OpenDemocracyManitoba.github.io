@@ -7,7 +7,7 @@ title: VPS Wordpress & Rails Hosting
 
 **In this post we will configure Rails and Workpress on a [Digital Ocean](https://m.do.co/c/9c57a647fd20) VPS.**
 
-**This is an update to [a similar post from two years ago](/2015/01/10/vps-ruby-on-rails-hosting-2/).** 
+This is an update to [a similar post from two years ago](/2015/01/10/vps-ruby-on-rails-hosting-2/). 
 
 Our final hosting setup will be:
 
@@ -16,7 +16,7 @@ Our final hosting setup will be:
 - Rails Hosting: [Phussion Passenger](https://www.phusionpassenger.com/)
 - Database Server: [MariaDb](https://mariadb.com/)
 - Language and Framework: [Ruby](http://www.ruby-lang.org/) 1.87 (legacy) & 2.x, plus [Rails](http://rubyonrails.org/) 5.x
-- CMS: [Wordpress](http://wordpress.org)
+- Language and Framework: [PHP][http://php.net] 7.x and [Wordpress](http://wordpress.org) 4.9.x
 
 **NOTE: ** Used MariaDB instead of Postgres because we need to install Wordpress.
 
@@ -77,7 +77,7 @@ Not shown in this tutorial: [How to use SSH keys with Digital Ocean Droplets](ht
 
 ### Step 3 - Create a Swap File (Optional)
 
-Some of the following steps require compilation, so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). Feel free to skip this step.
+Some of the following steps require compilation, so it's nice to have a swap file on the server. By default DO droplets to not have swap files, but [adding one isn't difficult](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04). This steps was much more necessary when I was using droplets with only 512MB RAM so feel free to skip this step.
 
 I created a 1GB swapfile, half my physical RAM, since I'm going to dial the swappiness way down:
 
@@ -125,7 +125,7 @@ sudo apt-get install git g++ make nodejs libsqlite3-dev postgresql postgresql-co
 
 ### Step 5 - MariaDB Setup
 
-[MariaDB](https://mariadb.com/) is a fork of the MySQL project.
+[MariaDB](https://mariadb.com/) is a fork of the MySQL project. I normally use Postgres when working with Rails, but because I needed to support Wordpress too, I used Maria.
 
 Switch to the root user:
 
@@ -142,7 +142,7 @@ sudo mysql_secure_installation
 Login with the root password you just set:
 
 ```
-sudo mysql -uroot -p
+sudo mariadb -uroot -p
 ```
 
 Add a new database from the SQL prompt:
@@ -151,7 +151,7 @@ Add a new database from the SQL prompt:
 create database newdatabasename;
 ```
 
-Create a new user with full permissions to this database:
+Create a new user with full permissions to this database. Also from the SQL prompt:
 
 ```
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER ON newdatabasename.* TO 'newusername'@'localhost' IDENTIFIED BY 'newuserpassword';
@@ -159,9 +159,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER ON newdatabasename.* T
 
 (Be sure to replacce the `newdatabasename`, `newusername` and `newuserpassword` with values of your own.)
 
-Switch back to the `serveruser`:
+Exit the SQL prompt and switch back to the `serveruser`:
 
 ``` 
+exit
 exit
 ```
 
@@ -177,11 +178,6 @@ source ~/.bash_profile
 cd ~/.rbenv && src/configure && make -C src
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-```
-
-This command will provide you with lines to add to your .bash_profile. Add those lines and reload the file:
-
-``` 
 ~/.rbenv/bin/rbenv init
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
@@ -243,6 +239,7 @@ sudo service nginx restart
 Create the /var/www folder and give it permissions. If /var/www already exists you can skip the `mkdir` step.
 
 ``` 
+mkdir /var/www
 sudo groupadd www-data
 sudo usermod -a -G www-data serveruser 
 sudo chown -R serveruser:www-data /var/www
@@ -327,7 +324,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    root /var/www/html;
+    root /var/www/wordpress/production;
 
     index index.php;
 
@@ -408,12 +405,6 @@ After which you may have to restart your droplet:
 
 ``` 
 sudo reboot
-```
-
-To keep rbenv up to date:
-
-``` 
-rbenv update
 ```
 
 To list newly available Ruby versions:
