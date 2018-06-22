@@ -18,7 +18,7 @@ Our final hosting setup will be:
 - Language and Framework: [Ruby](http://www.ruby-lang.org/) 1.87 (legacy) & 2.x, plus [Rails](http://rubyonrails.org/) 5.x
 - Language and Framework: [PHP](http://php.net) 7.x and [Wordpress](http://wordpress.org) 4.9.x
 
-**NOTE:** Used MariaDB instead of Postgres because we need to install Wordpress.
+**NOTE:** I used MariaDB instead of Postgres because Wordpress doesn't support Postgres.
 
 *This tutorial assumes a familiarity with the Linux command line, server administration, and Rails configuration.*
 
@@ -172,13 +172,14 @@ We are going to install Ruby by way of [rbenv](https://github.com/sstephenson/rb
 
 ``` 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 cd ~/.rbenv && src/configure && make -C src
+
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ~/.rbenv/bin/rbenv init
+
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
@@ -234,7 +235,7 @@ Re-start Nginx:
 sudo service nginx restart
 ```
 
-### Step 8 - File Permissions and Other Config
+### Step 8 - File Permissions and Other Git Config
 
 Create the /var/www folder and give it permissions. If /var/www already exists you can skip the `mkdir` step.
 
@@ -271,11 +272,11 @@ server {
     server_name  localhost;
     passenger_enabled on;
     rails_env development;
-    root /var/www/winnipegelection/public;
+    root /var/www/railsapp/public;
 }
 ```
 
-Note that the folder you specific for the `root` must point to the `public` folder of the app you cloned into the `/var/www/` folder. If you've mapped your droplet to a domain, replace `localhost` with the name of your domain.
+Note that the folder you specific for the `root` must point to the `public` folder of a Rails app you've install in your `/var/www/` folder. If you've mapped your droplet to a domain, replace `localhost` with the name of your domain.
 
 You'll also want to configure your Rails app to use MySQL using the credentials you created above. And don't forget to run your migrations!
 
@@ -301,6 +302,12 @@ curl -s https://api.wordpress.org/secret-key/1.1/salt/
 ```
 
 The last of those three commands will provide you with some secrets to add to the `wp-config.php` file. You also need to add your database credentials to this config file.
+
+I also changed the database encoding type (as per [this article](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434)):
+
+```
+define('DB_CHARSET', 'utf8mb4');
+```
 
 If you want Wordpress to be able to directly download plugins/updates you should also add:
 
@@ -387,7 +394,7 @@ At this point you might also want to install [fail2ban](http://www.fail2ban.org/
 
 Be cautious with fail2ban. You don't want to lock yourself out of your own server. If you do get blocked, you can login using the Digital Ocean web console for your droplet.
 
-### Step 12 - Test Your Sever
+### Step 13 - Test Your Sever
 
 Congrats! At this point you should now be able to load either a Rails app or Wordpress. When testing your app be sure to trigger actions that both read and write to your database to ensure that MariaDB is properly configured.
 
