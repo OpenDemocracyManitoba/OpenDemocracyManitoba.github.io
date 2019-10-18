@@ -64,9 +64,7 @@ Kirk also fielded a number of questions from the journalists in the audience reg
 
 ## The Twitter Summary
 
-The evening's conversation is best [summarized in Tweets](https://storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg) by Tessa Vanderhart.
-
-<div class="storify"><iframe src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg/embed?header=false&border=false&template=slideshow" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg.js?header=false&border=false&template=slideshow"></script><noscript>[<a href="//storify.com/tessavanderhart/ogt14-opengovernment-tour-stop-in-winnipeg" target="_blank">View the story "#OGT14: Open Government Tour stop in Winnipeg" on Storify</a>]</noscript></div>
+The event was live-tweeted by [Tessa Vanderhart](https://twitter.com/tessavanderhart). Tessa's currated collection of tweets from the evening is no longer available (the Storify platform no longer exists) but her tweets can still be seen [by following this link and scrolling down to tweets from August 11, 2014](https://twitter.com/search?q=(from%3Atessavanderhart)%20until%3A2014-08-13%20since%3A2014-08-11&src=typed_query&f=live). The tweets are in reverse-chronological order, so you may wish to start at the bottom.
 
 ## Part Two - The Return of the #OGT14
 
