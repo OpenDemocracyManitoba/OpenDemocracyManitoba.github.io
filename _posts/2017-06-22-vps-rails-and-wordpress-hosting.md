@@ -361,6 +361,19 @@ server {
 }
 ```
 
+I also find it handy to increase the upload size nginx and php can handle to allow for large image uploads through Wordpress. 
+
+```
+# File: /etc/nginx/nginx.conf
+
+client_max_body_size 25M;
+
+# File /etc/php/<version>/fpm/php.ini  Where version your php version.
+
+upload_max_filesize  = 25M
+post_max_size = 25M
+```
+
 ### Step 12 - Extra Security Stuff (Optional)
 
 Enable SSL with certbot:
